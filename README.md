@@ -1,8 +1,14 @@
 # Nezha
-Nezha is an evolutionary-based efficient and domain-independent differential testing framework developed in Columbia University. NEZHA exploits the behavioral asymmetries between multiple test programs to focus on inputs that are more likely to trigger semantic bugs.
+Nezha is an evolutionary-based efficient and domain-independent differential
+testing framework developed in Columbia University. NEZHA exploits the
+behavioral asymmetries between multiple test programs to focus on inputs that
+are more likely to trigger semantic bugs.
 
 ## What?
-Nezha features several runtime diversity-promoting metrics used to generate inputs for multi-app differential testing. These metrics are described in detail in the 2017 IEEE Symposium on Security and Privacy (Oakland) paper - [NEZHA: Efficient Domain-Independent Differential Testing](#).
+Nezha features several runtime diversity-promoting metrics used to generate
+inputs for multi-app differential testing. These metrics are described in
+detail in the 2017 IEEE Symposium on Security and Privacy (Oakland) paper -
+[NEZHA: Efficient Domain-Independent Differential Testing](https://www.ieee-security.org/TC/SP2017/papers/390.pdf).
 
 # Getting Started
 These examples are tested on Ubuntu 16.04.
@@ -24,4 +30,5 @@ Please refer to the domain-specific examples:
 Examples of some of the bugs we found with Nezha are listed [here](examples/bugs).
 
 # Writing your own tests / extending NEZHA
-Please refer to the [Wiki](https://github.com/nettrino/nezha_tmp/wiki) for more information on NEZHA's internals.
+Please refer to the [Wiki](https://github.com/nezha-dt/nezha/wiki) for more
+information on NEZHA's internals.
