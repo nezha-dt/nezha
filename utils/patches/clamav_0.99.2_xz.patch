@@ -1,0 +1,276 @@
+diff --git a/libclamav/7z/XzDec.c b/libclamav/7z/XzDec.c
+index 493d27a..ba6fe04 100644
+--- a/libclamav/7z/XzDec.c
++++ b/libclamav/7z/XzDec.c
+@@ -3,6 +3,11 @@
+
+ /* #define XZ_DUMP */
+
++
++// Set this to remove CRC checking
++#define FUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION
++
++
+ #ifdef XZ_DUMP
+ #include <stdio.h>
+ #endif
+@@ -495,15 +500,24 @@ SRes Xz_ParseHeader(CXzStreamFlags *p, const Byte *buf)
+   *p = (CXzStreamFlags)GetBe16(buf + XZ_SIG_SIZE);
+   if (CrcCalc(buf + XZ_SIG_SIZE, XZ_STREAM_FLAGS_SIZE) !=
+       GetUi32(buf + XZ_SIG_SIZE + XZ_STREAM_FLAGS_SIZE))
++#ifdef FUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION
++    {}
++#else
+     return SZ_ERROR_NO_ARCHIVE;
++#endif
+   return XzFlags_IsSupported(*p) ? SZ_OK : SZ_ERROR_UNSUPPORTED;
+ }
+
+ static Bool Xz_CheckFooter(CXzStreamFlags flags, UInt64 indexSize, const Byte *buf)
+ {
++#ifdef FUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION
++    Bool passCrc = True;
++#else
++    Bool passCrc = GetUi32(buf) == CrcCalc(buf + 4, 6);
++#endif
+   return
+       indexSize == (((UInt64)GetUi32(buf + 4) + 1) << 2) &&
+-      (GetUi32(buf) == CrcCalc(buf + 4, 6) &&
++      (passCrc &&
+       flags == GetBe16(buf + 8) &&
+       memcmp(buf + 10, XZ_FOOTER_SIG, XZ_FOOTER_SIG_SIZE) == 0);
+ }
+@@ -520,7 +534,11 @@ SRes XzBlock_Parse(CXzBlock *p, const Byte *header)
+   UInt32 headerSize = (UInt32)header[0] << 2;
+
+   if (CrcCalc(header, headerSize) != GetUi32(header + headerSize))
++#ifdef FUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION
++    {}
++#else
+     return SZ_ERROR_ARCHIVE;
++#endif
+
+   pos = 1;
+   if (pos == headerSize)
+@@ -746,7 +764,11 @@ SRes XzUnpacker_Code(CXzUnpacker *p, Byte *dest, SizeT *destLen,
+           (*srcLen)++;
+           p->alignPos++;
+           if (*src++ != 0)
++#ifdef FUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION
++            {}
++#else
+             return SZ_ERROR_CRC;
++#endif
+         }
+         else
+         {
+@@ -767,7 +789,11 @@ SRes XzUnpacker_Code(CXzUnpacker *p, Byte *dest, SizeT *destLen,
+             p->state = XZ_STATE_BLOCK_HEADER;
+             p->pos = 0;
+             if (XzCheck_Final(&p->check, digest) && memcmp(digest, p->buf, checkSize) != 0)
++#ifdef FUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION
++              {}
++#else
+               return SZ_ERROR_CRC;
++#endif
+           }
+         }
+         break;
+@@ -779,7 +805,11 @@ SRes XzUnpacker_Code(CXzUnpacker *p, Byte *dest, SizeT *destLen,
+         {
+           (*srcLen)++;
+           if (*src++ != p->buf[p->pos++])
++#ifdef FUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION
++            {}
++#else
+             return SZ_ERROR_CRC;
++#endif
+         }
+         else
+         {
+@@ -803,7 +833,11 @@ SRes XzUnpacker_Code(CXzUnpacker *p, Byte *dest, SizeT *destLen,
+             p->indexPos++;
+             p->indexSize++;
+             if (b != 0)
++#ifdef FUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION
++              {}
++#else
+               return SZ_ERROR_CRC;
++#endif
+           }
+           else
+           {
+@@ -815,7 +849,11 @@ SRes XzUnpacker_Code(CXzUnpacker *p, Byte *dest, SizeT *destLen,
+                 cl_finish_hash(p->sha, digest);
+
+             if (memcmp(digest, p->shaDigest, SHA256_DIGEST_SIZE) != 0)
++#ifdef FUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION
++              {}
++#else
+               return SZ_ERROR_CRC;
++#endif
+           }
+         }
+         break;
+@@ -833,7 +871,11 @@ SRes XzUnpacker_Code(CXzUnpacker *p, Byte *dest, SizeT *destLen,
+           p->state = XZ_STATE_STREAM_FOOTER;
+           p->pos = 0;
+           if (CRC_GET_DIGEST(p->crc) != GetUi32(p->buf))
++#ifdef FUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION
++            {}
++#else
+             return SZ_ERROR_CRC;
++#endif
+         }
+         break;
+       }
+@@ -853,7 +895,11 @@ SRes XzUnpacker_Code(CXzUnpacker *p, Byte *dest, SizeT *destLen,
+           p->numStreams++;
+           p->padSize = 0;
+           if (!Xz_CheckFooter(p->streamFlags, p->indexSize, p->buf))
++#ifdef FUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION
++            {}
++#else
+             return SZ_ERROR_CRC;
++#endif
+         }
+         break;
+       }
+diff --git a/libclamav/clamav.h b/libclamav/clamav.h
+index aeb6046..f55846e 100644
+--- a/libclamav/clamav.h
++++ b/libclamav/clamav.h
+@@ -788,6 +788,17 @@ int cl_finish_hash(void *ctx, void *buf);
+ void cl_hash_destroy(void *ctx);
+ /* End of crypto/hashing functions */
+
++
++////////////////////////////////////////////////////////////////////////////////
++/**
++ * Extensions to expose parsing fucntionality for fuzzing
++ */
++
++int CUSTOM_xz_init(void **xz_ctx);
++int CUSTOM_xz_parse(void *xz_ctx, const unsigned char *data, unsigned int size);
++int CUSTOM_xz_destroy(void *xz_ctx);
++
++
+ #ifdef __cplusplus
+ }
+ #endif
+diff --git a/libclamav/scanners.c b/libclamav/scanners.c
+index d78dfdd..7b27acb 100644
+--- a/libclamav/scanners.c
++++ b/libclamav/scanners.c
+@@ -118,6 +118,7 @@
+ #include <stddef.h>
+ #endif
+
++#include <assert.h>
+ #include <string.h>
+
+ static int cli_scanfile(const char *filename, cli_ctx *ctx);
+@@ -3772,6 +3773,103 @@ int cl_scanfile_callback(const char *filename, const char **virname, unsigned lo
+     return ret;
+ }
+
++////////////////////////////////////////////////////////////////////////////////
++/**
++ * Extensions to expose parsing fucntionality for fuzzing
++ */
++
++typedef struct _xz_ctx {
++    unsigned char *outbuf;
++    struct CLI_XZ strm;
++} xz_ctx_t;
++
++
++int CUSTOM_xz_init(void **xz_ctx)
++{
++    int ret = 0;
++    xz_ctx_t *ctx;
++
++    // Allocate global context struct
++    *xz_ctx = malloc(sizeof(xz_ctx_t));
++    if (!*xz_ctx)
++        return 1;
++    memset(*xz_ctx, 0, sizeof(xz_ctx_t));
++    ctx = (xz_ctx_t *)*xz_ctx;
++
++    // Allocate a temporary output buffer for decompression
++    ctx->outbuf = cli_malloc(CLI_XZ_OBUF_SIZE);
++
++    if (ctx->outbuf == NULL) {
++        ret = 2;
++        goto end;
++    }
++
++end:
++    if (ret)
++        CUSTOM_xz_destroy(ctx);
++
++    return ret;
++}
++
++
++int CUSTOM_xz_parse(void *xz_ctx, const unsigned char *data, unsigned int size)
++{
++    int ret = CL_CLEAN, rc;
++    xz_ctx_t *ctx = (xz_ctx_t *)xz_ctx;
++
++
++    memset(&ctx->strm, 0x00, sizeof(struct CLI_XZ));
++    ctx->strm.next_out = ctx->outbuf;
++    ctx->strm.avail_out = CLI_XZ_OBUF_SIZE;
++
++    rc = cli_XzInit(&ctx->strm);
++    assert(rc == XZ_RESULT_OK);
++
++    ctx->strm.avail_in = size;
++    ctx->strm.next_in = data;
++
++    do {
++
++        // cli_scanxz: premature end of compressed stream
++        if (!ctx->strm.avail_in) {
++            ret = CL_EFORMAT;
++            goto xz_exit;
++        }
++
++        // xz decode chunk
++        rc = cli_XzDecode(&ctx->strm);
++
++        // cli_scanxz: decompress error
++        if (XZ_RESULT_OK != rc && XZ_STREAM_END != rc) {
++            ret = CL_EFORMAT;
++            goto xz_exit;
++        }
++
++        if (!ctx->strm.avail_out || rc == XZ_STREAM_END) {
++            ctx->strm.avail_out = CLI_XZ_OBUF_SIZE;
++        }
++    } while (XZ_STREAM_END != rc);
++
++    // only scan decompressed output at this point
++
++xz_exit:
++    cli_XzShutdown(&ctx->strm);
++    return ret;
++}
++
++
++int CUSTOM_xz_destroy(void *xz_ctx)
++{
++    xz_ctx_t *ctx = (xz_ctx_t *)xz_ctx;
++
++    if (ctx->outbuf)
++        free(ctx->outbuf);
++
++    if (xz_ctx)
++        free(xz_ctx);
++    return 0;
++}
++
+ /*
+ Local Variables:
+    c-basic-offset: 4

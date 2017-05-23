@@ -1,0 +1,15 @@
+diff --git a/crypto/x509/a_verify.c b/crypto/x509/a_verify.c
+index 5a9adb6..9787904 100644
+--- a/crypto/x509/a_verify.c
++++ b/crypto/x509/a_verify.c
+@@ -112,8 +112,10 @@ int ASN1_item_verify(const ASN1_ITEM *it, X509_ALGOR *a,
+ 
+     if (EVP_DigestVerifyFinal(&ctx, signature->data,
+                               (size_t)signature->length) <= 0) {
++#ifndef FUZZER_DISABLE_SIGNCHECK
+         OPENSSL_PUT_ERROR(X509, ERR_R_EVP_LIB);
+         goto err;
++#endif
+     }
+     /*
+      * we don't need to zero the 'ctx' because we just checked public
