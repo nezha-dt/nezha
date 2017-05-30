@@ -1,5 +1,5 @@
 # NEZHA
-NEZHA is an efficient and domain-independent evolutionary differential
+NEZHA is an efficient and domain-independent differential
 fuzzer developed at Columbia University. NEZHA exploits the
 behavioral asymmetries between multiple test programs to focus on inputs that
 are more likely to trigger logic bugs.
