@@ -1,8 +1,8 @@
 # NEZHA
-NEZHA is an evolutionary-based efficient and domain-independent differential
-testing framework developed at Columbia University. NEZHA exploits the
+NEZHA is an efficient and domain-independent evolutionary differential
+fuzzer developed at Columbia University. NEZHA exploits the
 behavioral asymmetries between multiple test programs to focus on inputs that
-are more likely to trigger semantic bugs.
+are more likely to trigger logic bugs.
 
 ## What?
 NEZHA features several runtime diversity-promoting metrics used to generate
