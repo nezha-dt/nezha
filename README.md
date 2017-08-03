@@ -11,24 +11,13 @@ detail in the 2017 IEEE Symposium on Security and Privacy (Oakland) paper -
 [NEZHA: Efficient Domain-Independent Differential Testing](https://www.ieee-security.org/TC/SP2017/papers/390.pdf).
 
 # Getting Started
-These examples are tested on Ubuntu 16.04.
+The current code is a WIP to port NEZHA to the latest libFuzzer and is non-tested.
+Users who wish to access the code used in the NEZHA paper and the respective
+examples should access [v-0.1](https://github.com/nezha-dt/nezha/tree/v0.1).
 
-Install all dependencies and build NEZHA and the respective examples by invoking
-```
-        ./utils/build_helpers/setup.sh
-```
+This repo follows the format of libFuzzer's [fuzzer-test-suite](https://github.com/google/fuzzer-test-suite).
+For a simple example on how to perform differential testing using the NEZHA
+port of libFuzzer see [differential_fuzzing_tutorial](differeential_fuzzing_tutorial).
 
-This should create the appropriate files under examples/
-
-Please refer to the domain-specific examples:
-
-* [Quick Start](examples/src/apps/helloworld)
-* [Example 1 - SSL/TLS](examples/src/apps/sslcert)
-* [Example 2 - XZ archive parsing](examples/src/apps/xz)
-
-# Bug Examples
-Examples of some of the bugs we found with Nezha are listed [here](examples/bugs).
-
-# Writing your own tests / extending NEZHA
-Please refer to the [Wiki](https://github.com/nezha-dt/nezha/wiki) for more
-information on NEZHA's internals.
+# Support
+We welcome issues and pull requests with new fuzzing targets.

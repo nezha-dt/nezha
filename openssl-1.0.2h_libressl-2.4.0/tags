@@ -1,0 +1,212 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALL_LIBS	Makefile	/^ALL_LIBS = openssl libressl$/;"	m
+ASAN_OPTIONS	Makefile	/^	ASAN_OPTIONS=halt_on_error=0 .\/diff.der corpus\/ \\$/;"	m
+BIN_SUFFIX	Makefile	/^BIN_SUFFIX=.$(CA_FORMAT)$/;"	m
+BIN_SUFFIX	Makefile	/^BIN_SUFFIX=.der$/;"	m
+BIN_SUFFIX	Makefile	/^BIN_SUFFIX=.der.dbg$/;"	m
+BIN_SUFFIX	Makefile	/^BIN_SUFFIX=.pem$/;"	m
+BIN_SUFFIX	Makefile	/^BIN_SUFFIX=.pem.dbg$/;"	m
+CAPATH_DEFAULT1	common.h	/^const static char *CAPATH_DEFAULT1   = "\/etc\/ssl\/certs";$/;"	v
+CAPATH_DEFAULT2	common.h	/^const static char *CAPATH_DEFAULT2   = "certs\/CApath";$/;"	v
+CA_CONF_CONTENTS	Makefile	/^define CA_CONF_CONTENTS$/;"	m
+CA_FORMAT	Makefile	/^CA_FORMAT=der$/;"	m
+CA_FORMAT	Makefile	/^CA_FORMAT=pem$/;"	m
+CC	Makefile	/^CC=clang$/;"	m
+CERT_DIR	Makefile	/^CERT_DIR=certs$/;"	m
+CFLAGS	Makefile	/^CFLAGS=-O2 -Wall $(DBGFLAGS) $(OPTIONS)$/;"	m
+CFLAGS_SHARED_LIB	Makefile	/^CFLAGS_SHARED_LIB=$(CFLAGS_SHARED_O) -rdynamic -shared$/;"	m
+CFLAGS_SHARED_O	Makefile	/^CFLAGS_SHARED_O=-fPIC -fvisibility=hidden$/;"	m
+CONFIG_DBG_MAIN	Makefile	/^CONFIG_DBG_MAIN=-DCONFIG_DBG_MAIN$/;"	m
+CONFIG_DEBUG	Makefile	/^CONFIG_DEBUG=-DCONFIG_DEBUG$/;"	m
+CONFIG_DEBUG	Makefile	/^CONFIG_DEBUG=-DCONFIG_SUMMARY$/;"	m
+CONFIG_USE_DER	Makefile	/^CONFIG_USE_DER=-DCONFIG_USE_DER$/;"	m
+CONFIG_USE_DER	Makefile	/^CONFIG_USE_DER=-DCONFIG_USE_PEM$/;"	m
+CONFIG_USE_LIBS	Makefile	/^CONFIG_USE_LIBS =$/;"	m
+CONFIG_USE_LIBS	Makefile	/^CONFIG_USE_LIBS=$(foreach l, \\$/;"	m
+CORPUS_DIR	Makefile	/^CORPUS_DIR=corpus_dir$/;"	m
+COV_FLAGS	Makefile	/^COV_FLAGS=-O2 -fno-omit-frame-pointer -g -fsanitize=address -fsanitize-coverage=trace-pc-guard,trace-cmp,trace-gep,trace-div$/;"	m
+CUR_DIR	Makefile	/^CUR_DIR=`pwd`$/;"	m
+CXX	Makefile	/^CXX=clang++$/;"	m
+Callback2	diff.cpp	/^extern "C" int Callback2(const uint8_t *Data, size_t Size) {$/;"	f
+DBG	common.h	46;"	d
+DBG	common.h	48;"	d
+DBGFLAGS	Makefile	/^DBGFLAGS=-g -ggdb3$/;"	m
+DBG_LOG	Makefile	/^DBG_LOG=0$/;"	m
+DBG_MAIN	Makefile	/^DBG_MAIN=0$/;"	m
+DBG_S	common.h	40;"	d
+DBG_S	common.h	42;"	d
+EXERCISE	diff.h	48;"	d
+FAILURE_INTERNAL	common.h	119;"	d
+FN_VERIFY_CERT	common.h	121;"	d
+FREE_GLOBALS	diff.h	40;"	d
+FREE_LIB_CERTS	diff.cpp	55;"	d	file:
+FREE_PTR	common.h	124;"	d
+GlobalInitializer	diff.cpp	/^  GlobalInitializer() {$/;"	f	struct:GlobalInitializer
+GlobalInitializer	diff.cpp	/^struct GlobalInitializer {$/;"	s	file:
+GlobalState	libressl.cpp	/^    GlobalState()$/;"	f	struct:GlobalState
+GlobalState	libressl.cpp	/^struct GlobalState {$/;"	s	file:
+GlobalState	openssl.cpp	/^    GlobalState()$/;"	f	struct:GlobalState
+GlobalState	openssl.cpp	/^struct GlobalState {$/;"	s	file:
+INCLUDE	diff.cpp	16;"	d	file:
+INC_LIBRESSL	Makefile	/^INC_LIBRESSL= -I$(LIBRESSL)\/include$/;"	m
+INC_OPENSSL	Makefile	/^INC_OPENSSL= -I$(OPENSSL)\/include$/;"	m
+INIT_CERTS_DER	diff.cpp	48;"	d	file:
+INIT_CERTS_PEM	diff.cpp	51;"	d	file:
+INIT_LIB	diff.cpp	37;"	d	file:
+INT_CA_CONF_CONTENTS	Makefile	/^define INT_CA_CONF_CONTENTS$/;"	m
+InitCaStore	libressl.cpp	/^    X509_STORE *InitCaStore() {$/;"	f	struct:GlobalState
+InitCaStore	openssl.cpp	/^    X509_STORE *InitCaStore() {$/;"	f	struct:GlobalState
+KEY_SZ	Makefile	/^KEY_SZ=2048$/;"	m
+LD_LIBRESSL	Makefile	/^LD_LIBRESSL= -L$(LIBRESSL)\/lib -lcrypto -Wl,-static -lcrypto -Wl,-Bdynamic$/;"	m
+LD_MAIN	Makefile	/^LD_MAIN=-ldl -lstdc++ -pthread$/;"	m
+LD_OPENSSL	Makefile	/^LD_OPENSSL= -L$(OPENSSL)\/lib -lcrypto$/;"	m
+LIBDIR	Makefile	/^LIBDIR=lib$/;"	m
+LIBFUZZER	Makefile	/^LIBFUZZER=..\/Fuzzer\/libFuzzer.a$/;"	m
+LIBRESSL	Makefile	/^LIBRESSL=$(LIBS_DIR)\/build_libressl-2.4.0_diff\/$/;"	m
+LIBS	Makefile	/^LIBS =$/;"	m
+LIBS	Makefile	/^LIBS=$(foreach l, \\$/;"	m
+LIBS_DIR	Makefile	/^LIBS_DIR=..\/BUILD$/;"	m
+LIB_EXPORT	common.h	54;"	d
+LIB_EXPORT	common.h	56;"	d
+LIB_LIBRESSL	libressl.h	/^const static char *LIB_LIBRESSL = "lib\/liblibressl_der.so";$/;"	v
+LIB_LIBRESSL	libressl.h	/^const static char *LIB_LIBRESSL = "lib\/liblibressl_pem.so";$/;"	v
+LIB_OPENSSL	openssl.h	/^const static char *LIB_OPENSSL = "lib\/libopenssl_der.so";$/;"	v
+LIB_OPENSSL	openssl.h	/^const static char *LIB_OPENSSL = "lib\/libopenssl_pem.so";$/;"	v
+LLVMFuzzerBitcounts	diff.h	/^extern "C" ValContainerInt *LLVMFuzzerBitcounts() {$/;"	f
+LLVMFuzzerCovBuffers	diff.h	/^extern "C" ValContainerU64 *LLVMFuzzerCovBuffers() {$/;"	f
+LLVMFuzzerCustomCallbacks	diff.cpp	/^extern "C" UserCallbacks *LLVMFuzzerCustomCallbacks() {$/;"	f
+LLVMFuzzerEdgecounts	diff.h	/^extern "C" ValContainerInt *LLVMFuzzerEdgecounts() {$/;"	f
+LLVMFuzzerNezhaOutputs	diff.h	/^extern "C" ValContainerInt *LLVMFuzzerNezhaOutputs() {$/;"	f
+LLVMFuzzerTestOneInput	diff.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *cert_chain_openssl,$/;"	f
+NO_SANITIZE_MEMORY	diff.h	15;"	d
+NO_SANITIZE_MEMORY	diff.h	18;"	d
+NO_SANITIZE_MEMORY	diff.h	19;"	d
+OPENSSL	Makefile	/^OPENSSL=$(LIBS_DIR)\/build_openssl-1.0.2h_diff\/$/;"	m
+OPTIONS	Makefile	/^OPTIONS=$(CONFIG_DBG_MAIN) $(CONFIG_USE_DER) $(CONFIG_DEBUG)$/;"	m
+OUT_DIR	Makefile	/^OUT_DIR=out$/;"	m
+RET_CERT_CANT_PARSE	common.h	118;"	d
+RET_CERT_ERR	common.h	117;"	d
+RET_CERT_OK	common.h	116;"	d
+SUM	Makefile	/^SUM=0$/;"	m
+TARGET	Makefile	/^TARGET=diff$(BIN_SUFFIX)$/;"	m
+TEST_CERT	Makefile	/^TEST_CERT=test_cert.$(CA_FORMAT)$/;"	m
+TEST_COMMON	Makefile	/^TEST_COMMON=main_test.cpp$/;"	m
+USE_DER	Makefile	/^USE_DER=1$/;"	m
+USE_LIB_LIBRESSL	Makefile	/^USE_LIB_LIBRESSL=1$/;"	m
+USE_LIB_OPENSSL	Makefile	/^USE_LIB_OPENSSL=1$/;"	m
+UserCallback	diff.cpp	/^typedef int (*UserCallback)(const uint8_t *Data, size_t Size);$/;"	t	file:
+UserCallbacks	diff.cpp	/^struct UserCallbacks {$/;"	s	file:
+VERIFY	main_test.cpp	15;"	d	file:
+VERIFY_ONE	diff.cpp	58;"	d	file:
+ValContainerInt	diff.h	/^struct ValContainerInt {$/;"	s
+ValContainerU64	diff.h	/^struct ValContainerU64 {$/;"	s
+__COMMON_H__	common.h	2;"	d
+__DIFF_H__	diff.h	2;"	d
+__FUNC_H__	func.h	2;"	d
+__LF_X509_V_ERR_AKID_ISSUER_SERIAL_MISMATCH	common.h	91;"	d
+__LF_X509_V_ERR_AKID_SKID_MISMATCH	common.h	90;"	d
+__LF_X509_V_ERR_CERT_CHAIN_TOO_LONG	common.h	82;"	d
+__LF_X509_V_ERR_CERT_HAS_EXPIRED	common.h	70;"	d
+__LF_X509_V_ERR_CERT_NOT_YET_VALID	common.h	69;"	d
+__LF_X509_V_ERR_CERT_REJECTED	common.h	88;"	d
+__LF_X509_V_ERR_CERT_REVOKED	common.h	83;"	d
+__LF_X509_V_ERR_CERT_SIGNATURE_FAILURE	common.h	67;"	d
+__LF_X509_V_ERR_CERT_UNTRUSTED	common.h	87;"	d
+__LF_X509_V_ERR_CRL_HAS_EXPIRED	common.h	72;"	d
+__LF_X509_V_ERR_CRL_NOT_YET_VALID	common.h	71;"	d
+__LF_X509_V_ERR_CRL_PATH_VALIDATION_ERROR	common.h	113;"	d
+__LF_X509_V_ERR_CRL_SIGNATURE_FAILURE	common.h	68;"	d
+__LF_X509_V_ERR_DEPTH_ZERO_SELF_SIGNED_CERT	common.h	78;"	d
+__LF_X509_V_ERR_DIFFERENT_CRL_SCOPE	common.h	104;"	d
+__LF_X509_V_ERR_ERROR_IN_CERT_NOT_AFTER_FIELD	common.h	74;"	d
+__LF_X509_V_ERR_ERROR_IN_CERT_NOT_BEFORE_FIELD	common.h	73;"	d
+__LF_X509_V_ERR_ERROR_IN_CRL_LAST_UPDATE_FIELD	common.h	75;"	d
+__LF_X509_V_ERR_ERROR_IN_CRL_NEXT_UPDATE_FIELD	common.h	76;"	d
+__LF_X509_V_ERR_EXCLUDED_VIOLATION	common.h	108;"	d
+__LF_X509_V_ERR_INVALID_CA	common.h	84;"	d
+__LF_X509_V_ERR_INVALID_EXTENSION	common.h	101;"	d
+__LF_X509_V_ERR_INVALID_NON_CA	common.h	97;"	d
+__LF_X509_V_ERR_INVALID_POLICY_EXTENSION	common.h	102;"	d
+__LF_X509_V_ERR_INVALID_PURPOSE	common.h	86;"	d
+__LF_X509_V_ERR_KEYUSAGE_NO_CERTSIGN	common.h	92;"	d
+__LF_X509_V_ERR_KEYUSAGE_NO_CRL_SIGN	common.h	95;"	d
+__LF_X509_V_ERR_KEYUSAGE_NO_DIGITAL_SIGNATURE	common.h	99;"	d
+__LF_X509_V_ERR_NO_EXPLICIT_POLICY	common.h	103;"	d
+__LF_X509_V_ERR_OUT_OF_MEM	common.h	77;"	d
+__LF_X509_V_ERR_PATH_LENGTH_EXCEEDED	common.h	85;"	d
+__LF_X509_V_ERR_PERMITTED_VIOLATION	common.h	107;"	d
+__LF_X509_V_ERR_PROXY_CERTIFICATES_NOT_ALLOWED	common.h	100;"	d
+__LF_X509_V_ERR_PROXY_PATH_LENGTH_EXCEEDED	common.h	98;"	d
+__LF_X509_V_ERR_SELF_SIGNED_CERT_IN_CHAIN	common.h	79;"	d
+__LF_X509_V_ERR_SUBJECT_ISSUER_MISMATCH	common.h	89;"	d
+__LF_X509_V_ERR_SUBTREE_MINMAX	common.h	109;"	d
+__LF_X509_V_ERR_UNABLE_TO_DECODE_ISSUER_PUBLIC_KEY	common.h	66;"	d
+__LF_X509_V_ERR_UNABLE_TO_DECRYPT_CERT_SIGNATURE	common.h	64;"	d
+__LF_X509_V_ERR_UNABLE_TO_DECRYPT_CRL_SIGNATURE	common.h	65;"	d
+__LF_X509_V_ERR_UNABLE_TO_GET_CRL	common.h	63;"	d
+__LF_X509_V_ERR_UNABLE_TO_GET_CRL_ISSUER	common.h	93;"	d
+__LF_X509_V_ERR_UNABLE_TO_GET_ISSUER_CERT	common.h	62;"	d
+__LF_X509_V_ERR_UNABLE_TO_GET_ISSUER_CERT_LOCALLY	common.h	80;"	d
+__LF_X509_V_ERR_UNABLE_TO_VERIFY_LEAF_SIGNATURE	common.h	81;"	d
+__LF_X509_V_ERR_UNHANDLED_CRITICAL_CRL_EXTENSION	common.h	96;"	d
+__LF_X509_V_ERR_UNHANDLED_CRITICAL_EXTENSION	common.h	94;"	d
+__LF_X509_V_ERR_UNNESTED_RESOURCE	common.h	106;"	d
+__LF_X509_V_ERR_UNSUPPORTED_CONSTRAINT_SYNTAX	common.h	111;"	d
+__LF_X509_V_ERR_UNSUPPORTED_CONSTRAINT_TYPE	common.h	110;"	d
+__LF_X509_V_ERR_UNSUPPORTED_EXTENSION_FEATURE	common.h	105;"	d
+__LF_X509_V_ERR_UNSUPPORTED_NAME_SYNTAX	common.h	112;"	d
+__LF_X509_V_OK	common.h	61;"	d
+__LIBRESSL_H__	libressl.h	2;"	d
+__OPENSSL_H__	openssl.h	2;"	d
+bitcounts	diff.h	/^int *bitcounts = NULL;$/;"	v
+bitset_cur	diff.h	/^uint8_t **bitset_cur;$/;"	v
+bitset_old	diff.h	/^uint8_t **bitset_old;$/;"	v
+build_lib	build.sh	/^build_lib() {$/;"	f
+caStore	libressl.cpp	/^    X509_STORE *caStore;$/;"	m	struct:GlobalState	file:
+caStore	openssl.cpp	/^    X509_STORE *caStore;$/;"	m	struct:GlobalState	file:
+callback_cont	diff.cpp	/^} callback_cont = { NULL, 0 };$/;"	v	typeref:struct:UserCallbacks
+callbacks	diff.cpp	/^  UserCallback *callbacks;$/;"	m	struct:UserCallbacks	file:
+cert_chain_pem	diff.cpp	/^uint8_t * cert_chain_pem = NULL;$/;"	v
+cert_chain_pem_init	diff.cpp	/^uint8_t * cert_chain_pem_init = NULL;$/;"	v
+cert_chain_sz_pem	diff.cpp	/^size_t cert_chain_sz_pem;$/;"	v
+compositize_ret_val	common.h	34;"	d
+cov_buff_idx	diff.h	/^uint64_t *cov_buff_idx = NULL;$/;"	v
+cur_lib	diff.h	/^int cur_lib = 0;$/;"	v
+diff_init	diff.h	/^void diff_init() {$/;"	f
+ecnt	diff.h	/^int *ecnt;$/;"	v
+fp_t	common.h	/^typedef int (*fp_t)(const uint8_t *, uint32_t);$/;"	t
+g_initializer	diff.cpp	/^static GlobalInitializer g_initializer;$/;"	v	file:
+get_interface_fn	diff.h	/^void *get_interface_fn(void *handle, const char *libpath, const char *fname) {$/;"	f
+gl_callbacks	diff.cpp	/^UserCallback gl_callbacks[2] = { LLVMFuzzerTestOneInput, Callback2 };$/;"	v
+load_cert_chain_from_mem	libressl.cpp	/^static STACK_OF(X509) *load_cert_chain_from_mem(X509 **leaf,$/;"	f
+load_cert_chain_from_mem	openssl.cpp	/^static STACK_OF(X509) *load_cert_chain_from_mem(X509 **leaf,$/;"	f
+main	main_test.cpp	/^int main(int argc, char **argv)$/;"	f
+mk_libs	Makefile	/^define mk_libs$/;"	m
+mk_run_tests	Makefile	/^define mk_run_tests$/;"	m
+mk_tests	Makefile	/^define mk_tests$/;"	m
+num_bitcounters	diff.h	/^uint32_t num_bitcounters;$/;"	v
+read_file	func.h	/^size_t read_file(const char *fn, uint8_t **buf)$/;"	f
+ret_openssl	diff.cpp	/^int ret_openssl = FAILURE_INTERNAL;$/;"	v
+ret_vals	diff.h	/^int *ret_vals = NULL;$/;"	v
+size	diff.cpp	/^  int size;$/;"	m	struct:UserCallbacks	file:
+size	diff.h	/^  int size;$/;"	m	struct:ValContainerInt
+size	diff.h	/^  int size;$/;"	m	struct:ValContainerU64
+total_libs	diff.h	/^int total_libs = 0;$/;"	v
+update_bitcount	diff.h	/^int update_bitcount(uint8_t *bitset, uint8_t *bitset_prev, int *ecnt) {$/;"	f
+vals	diff.h	/^  int *vals;$/;"	m	struct:ValContainerInt
+vals	diff.h	/^  uint64_t *vals;$/;"	m	struct:ValContainerU64
+vcont_int	diff.h	/^} vcont_int = { NULL, 0 };$/;"	v	typeref:struct:ValContainerInt
+vcont_u64	diff.h	/^} vcont_u64 = { NULL, 0 };$/;"	v	typeref:struct:ValContainerU64
+verify	main_test.cpp	/^static void verify(char *cert)$/;"	f	file:
+verify_cert_mem	libressl.cpp	/^int verify_cert_mem(const uint8_t *data_cert, uint32_t size_cert)$/;"	f
+verify_cert_mem	openssl.cpp	/^int verify_cert_mem(const uint8_t *data_cert, uint32_t size_cert)$/;"	f
+verify_cert_mem_libressl	libressl.cpp	/^int verify_cert_mem_libressl(const uint8_t *data_cert, uint32_t size_cert)$/;"	f
+verify_cert_mem_openssl	openssl.cpp	/^int verify_cert_mem_openssl(const uint8_t *data_cert, uint32_t size_cert)$/;"	f
+~GlobalInitializer	diff.cpp	/^    ~GlobalInitializer() { }$/;"	f	struct:GlobalInitializer
+~GlobalState	libressl.cpp	/^    ~GlobalState() {$/;"	f	struct:GlobalState
+~GlobalState	openssl.cpp	/^    ~GlobalState() {$/;"	f	struct:GlobalState

@@ -1,0 +1,984 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+A	FuzzerTracePC.h	/^    T A, B;$/;"	m	struct:fuzzer::TableOfRecentCompares::Pair
+A	test/LargeTest.cpp	12;"	d	file:
+AFL_DEFER_FORKSVR	afl/afl_driver.cpp	/^static volatile char AFL_DEFER_FORKSVR[] = "##SIG_AFL_DEFER_FORKSRV##";$/;"	v	file:
+AFL_PERSISTENT	afl/afl_driver.cpp	/^static volatile char AFL_PERSISTENT[] = "##SIG_AFL_PERSISTENT##";$/;"	v	file:
+ALWAYS_INLINE	FuzzerDefs.h	62;"	d
+ALWAYS_INLINE	FuzzerDefs.h	65;"	d
+ATTRIBUTE_INTERFACE	FuzzerDefs.h	83;"	d
+ATTRIBUTE_INTERFACE	FuzzerDefs.h	85;"	d
+ATTRIBUTE_NO_SANITIZE_ADDRESS	FuzzerDefs.h	68;"	d
+ATTRIBUTE_NO_SANITIZE_ALL	FuzzerDefs.h	72;"	d
+ATTRIBUTE_NO_SANITIZE_ALL	FuzzerDefs.h	74;"	d
+ATTRIBUTE_NO_SANITIZE_ALL	FuzzerDefs.h	76;"	d
+ATTRIBUTE_NO_SANITIZE_ALL	FuzzerDefs.h	79;"	d
+ATTRIBUTE_NO_SANITIZE_MEMORY	FuzzerDefs.h	58;"	d
+ATTRIBUTE_NO_SANITIZE_MEMORY	FuzzerDefs.h	60;"	d
+ATTRIBUTE_NO_SANITIZE_MEMORY	FuzzerDefs.h	64;"	d
+ATTRIBUTE_TARGET_POPCNT	FuzzerDefs.h	47;"	d
+ATTRIBUTE_TARGET_POPCNT	FuzzerDefs.h	49;"	d
+ATTRIBUTE_TARGET_POPCNT	FuzzerDefs.h	52;"	d
+ActiveThreadCount	FuzzerUtilDarwin.cpp	/^static int ActiveThreadCount = 0;$/;"	m	namespace:fuzzer	file:
+Add	FuzzerTracePC.h	/^  void Add(const uint8_t *Data, size_t Size) {$/;"	f	struct:fuzzer::MemMemTable
+AddFeature	FuzzerCorpus.h	/^  void AddFeature(size_t Idx, uint32_t NewSize, bool Shrink) {$/;"	f	class:fuzzer::InputCorpus
+AddToCorpus	FuzzerCorpus.h	/^  void AddToCorpus(const Unit &U, size_t NumFeatures, bool MayDeleteFile,$/;"	f	class:fuzzer::InputCorpus
+AddValue	FuzzerValueBitMap.h	/^  inline bool AddValue(uintptr_t Value) {$/;"	f	struct:fuzzer::ValueBitMap
+AddValueForMemcmp	FuzzerTracePC.cpp	/^void TracePC::AddValueForMemcmp(void *caller_pc, const void *s1, const void *s2,$/;"	f	class:fuzzer::TracePC
+AddValueModPrime	FuzzerValueBitMap.h	/^  inline bool AddValueModPrime(uintptr_t Value) {$/;"	f	struct:fuzzer::ValueBitMap
+AddWordFromDictionary	FuzzerMutate.cpp	/^size_t MutationDispatcher::AddWordFromDictionary(Dictionary &D, uint8_t *Data,$/;"	f	class:fuzzer::MutationDispatcher
+AddWordToManualDictionary	FuzzerMutate.cpp	/^void MutationDispatcher::AddWordToManualDictionary(const Word &W) {$/;"	f	class:fuzzer::MutationDispatcher
+AflInputBuf	afl/afl_driver.cpp	/^static uint8_t AflInputBuf[kMaxAflInputSize];$/;"	v	file:
+AlarmCallback	FuzzerLoop.cpp	/^void Fuzzer::AlarmCallback() {$/;"	f	class:fuzzer::Fuzzer
+AlarmHandler	FuzzerUtilPosix.cpp	/^static void AlarmHandler(int, siginfo_t *, void *) {$/;"	f	namespace:fuzzer
+AlarmHandler	FuzzerUtilWindows.cpp	/^void CALLBACK AlarmHandler(PVOID, BOOLEAN) {$/;"	f	namespace:fuzzer
+AllFeatures	FuzzerMerge.cpp	/^std::set<uint32_t> Merger::AllFeatures() const {$/;"	f	class:fuzzer::Merger
+AllInputsAreFiles	FuzzerDriver.cpp	/^static bool AllInputsAreFiles() {$/;"	f	namespace:fuzzer
+AllLines	test/SimpleCmpTest.cpp	/^int AllLines[__LINE__ + 1];  \/\/ Must be the last line.$/;"	v
+AllocTracer	FuzzerLoop.cpp	/^static MallocFreeTracer AllocTracer;$/;"	m	namespace:fuzzer	file:
+AllocateCurrentUnitData	FuzzerLoop.cpp	/^void Fuzzer::AllocateCurrentUnitData() {$/;"	f	class:fuzzer::Fuzzer
+AllocatedPointers	test/AccumulateAllocationsTest.cpp	/^int *AllocatedPointers[kAllocatedPointersSize];$/;"	v
+AnalyzeDictionary	FuzzerDriver.cpp	/^int AnalyzeDictionary(Fuzzer *F, const std::vector<Unit>& Dict,$/;"	f	namespace:fuzzer
+AnnounceOutput	FuzzerLoop.cpp	/^void Fuzzer::AnnounceOutput(const uint8_t *Data, size_t Size) {$/;"	f	class:fuzzer::Fuzzer
+ApplyDictionaryEntry	FuzzerMutate.cpp	/^size_t MutationDispatcher::ApplyDictionaryEntry(uint8_t *Data, size_t Size,$/;"	f	class:fuzzer::MutationDispatcher
+ApproximateMemoryConsumption	FuzzerMerge.cpp	/^size_t Merger::ApproximateMemoryConsumption() const  {$/;"	f	class:fuzzer::Merger
+ArtifactPrefix	FuzzerOptions.h	/^  std::string ArtifactPrefix = ".\/";$/;"	m	struct:fuzzer::FuzzingOptions
+B	FuzzerTracePC.h	/^    T A, B;$/;"	m	struct:fuzzer::TableOfRecentCompares::Pair
+B	test/LargeTest.cpp	24;"	d	file:
+BLOCK_LENGTH	FuzzerSHA1.cpp	52;"	d	file:
+Bar	test/TwoDifferentBugsTest.cpp	/^void Bar() { Null[2] = 0; }$/;"	f
+Base64	FuzzerUtil.cpp	/^std::string Base64(const Unit &U) {$/;"	f	namespace:fuzzer
+BaseSha1	FuzzerInternal.h	/^  uint8_t BaseSha1[kSHA1NumBytes];  \/\/ Checksum of the base unit.$/;"	m	class:fuzzer::Fuzzer
+Bswap	FuzzerDefs.h	/^inline uint16_t Bswap(uint16_t x) { return __builtin_bswap16(x); }$/;"	f	namespace:fuzzer
+Bswap	FuzzerDefs.h	/^inline uint32_t Bswap(uint32_t x) { return __builtin_bswap32(x); }$/;"	f	namespace:fuzzer
+Bswap	FuzzerDefs.h	/^inline uint64_t Bswap(uint64_t x) { return __builtin_bswap64(x); }$/;"	f	namespace:fuzzer
+Bswap	FuzzerDefs.h	/^inline uint8_t  Bswap(uint8_t x)  { return x; }$/;"	f	namespace:fuzzer
+C	test/LargeTest.cpp	25;"	d	file:
+CB	FuzzerInternal.h	/^  UserCallback CB;$/;"	m	class:fuzzer::Fuzzer
+CHECK_ERROR	afl/afl_driver.cpp	83;"	d	file:
+ChangeBinaryInteger	FuzzerMutate.cpp	/^size_t ChangeBinaryInteger(uint8_t *Data, size_t Size, Random &Rand) {$/;"	f	namespace:fuzzer
+CheckExitOnSrcPosOrItem	FuzzerLoop.cpp	/^void Fuzzer::CheckExitOnSrcPosOrItem() {$/;"	f	class:fuzzer::Fuzzer
+CheckFnPtr	FuzzerExtFunctionsWeak.cpp	/^static void CheckFnPtr(void *FnPtr, const char *FnName, bool WarnIfMissing) {$/;"	f	file:
+ChooseUnitIdxToMutate	FuzzerCorpus.h	/^  size_t ChooseUnitIdxToMutate(Random &Rand) {$/;"	f	class:fuzzer::InputCorpus
+ChooseUnitToMutate	FuzzerCorpus.h	/^  InputInfo &ChooseUnitToMutate(Random &Rand) {$/;"	f	class:fuzzer::InputCorpus
+CleanseCrashInput	FuzzerDriver.cpp	/^int CleanseCrashInput(const std::vector<std::string> &Args,$/;"	f	namespace:fuzzer
+ClearExtraCounters	FuzzerExtraCounters.cpp	/^void ClearExtraCounters() {  \/\/ hand-written memset, don't asan-ify.$/;"	f	namespace:fuzzer
+CloneArgsWithoutX	FuzzerDriver.cpp	/^std::string CloneArgsWithoutX(const std::vector<std::string> &Args,$/;"	f	namespace:fuzzer
+CloneArgsWithoutX	FuzzerUtil.h	/^inline std::string CloneArgsWithoutX(const std::vector<std::string> &Args,$/;"	f	namespace:fuzzer
+CloseFile	FuzzerIOPosix.cpp	/^int CloseFile(int fd) {$/;"	f	namespace:fuzzer
+CloseFile	FuzzerIOWindows.cpp	/^int CloseFile(int Fd) {$/;"	f	namespace:fuzzer
+CloseStdout	FuzzerIO.cpp	/^void CloseStdout() {$/;"	f	namespace:fuzzer
+CmpDictionaryEntriesDeque	FuzzerMutate.h	/^  DictionaryEntry CmpDictionaryEntriesDeque[kCmpDictionaryEntriesDequeSize];$/;"	m	class:fuzzer::MutationDispatcher
+CmpDictionaryEntriesDequeIdx	FuzzerMutate.h	/^  size_t CmpDictionaryEntriesDequeIdx = 0;$/;"	m	class:fuzzer::MutationDispatcher
+CollectFeatures	FuzzerTracePC.h	/^void TracePC::CollectFeatures(Callback HandleFeature) const {$/;"	f	class:fuzzer::TracePC
+ComputeMutationLen	FuzzerLoop.cpp	/^static size_t ComputeMutationLen(size_t MaxInputSize, size_t MaxMutationLen,$/;"	f	namespace:fuzzer
+ComputeSHA1	FuzzerSHA1.cpp	/^void ComputeSHA1(const uint8_t *Data, size_t Len, uint8_t *Out) {$/;"	f	namespace:fuzzer
+ContainsWord	FuzzerDictionary.h	/^  bool ContainsWord(const Word &W) const {$/;"	f	class:fuzzer::Dictionary
+CopyFileToErr	FuzzerIO.cpp	/^void CopyFileToErr(const std::string &Path) {$/;"	f	namespace:fuzzer
+CopyPartOf	FuzzerMutate.cpp	/^size_t MutationDispatcher::CopyPartOf(const uint8_t *From, size_t FromSize,$/;"	f	class:fuzzer::MutationDispatcher
+Corpus	FuzzerInternal.h	/^  InputCorpus &Corpus;$/;"	m	class:fuzzer::Fuzzer
+Corpus	FuzzerMutate.h	/^  const InputCorpus *Corpus = nullptr;$/;"	m	class:fuzzer::MutationDispatcher
+CorpusDistribution	FuzzerCorpus.h	/^  std::piecewise_constant_distribution<double> CorpusDistribution;$/;"	m	class:fuzzer::InputCorpus
+Counter	test/NthRunCrashTest.cpp	/^static int Counter;$/;"	v	file:
+Counters	FuzzerTracePC.cpp	/^uint8_t *TracePC::Counters() const {$/;"	f	class:fuzzer::TracePC
+Counters	test/TableLookupTest.cpp	/^static uint8_t Counters[N];$/;"	v	file:
+CrashCallback	FuzzerLoop.cpp	/^void Fuzzer::CrashCallback() {$/;"	f	class:fuzzer::Fuzzer
+CrashHandler	FuzzerUtilPosix.cpp	/^static void CrashHandler(int, siginfo_t *, void *) {$/;"	f	namespace:fuzzer
+CrashHandler	FuzzerUtilWindows.cpp	/^static void CrashHandler(int) { Fuzzer::StaticCrashSignalCallback(); }$/;"	f	namespace:fuzzer
+CrashOnOverwrittenData	FuzzerLoop.cpp	/^void Fuzzer::CrashOnOverwrittenData() {$/;"	f	class:fuzzer::Fuzzer
+CrashResistantMerge	FuzzerMerge.cpp	/^void Fuzzer::CrashResistantMerge(const std::vector<std::string> &Args,$/;"	f	class:fuzzer::Fuzzer
+CrashResistantMergeInternalStep	FuzzerMerge.cpp	/^void Fuzzer::CrashResistantMergeInternalStep(const std::string &CFPath) {$/;"	f	class:fuzzer::Fuzzer
+Create	FuzzerShmemPosix.cpp	/^bool SharedMemoryRegion::Create(const char *Name) {$/;"	f	class:fuzzer::SharedMemoryRegion
+Create	FuzzerShmemWindows.cpp	/^bool SharedMemoryRegion::Create(const char *Name) {$/;"	f	class:fuzzer::SharedMemoryRegion
+CrossOver	FuzzerCrossOver.cpp	/^size_t MutationDispatcher::CrossOver(const uint8_t *Data1, size_t Size1,$/;"	f	class:fuzzer::MutationDispatcher
+CtrlHandler	FuzzerUtilWindows.cpp	/^BOOL WINAPI CtrlHandler(DWORD dwCtrlType) {$/;"	f	namespace:fuzzer
+CurrentDictionaryEntrySequence	FuzzerMutate.h	/^  std::vector<DictionaryEntry *> CurrentDictionaryEntrySequence;$/;"	m	class:fuzzer::MutationDispatcher
+CurrentMutatorSequence	FuzzerMutate.h	/^  std::vector<Mutator> CurrentMutatorSequence;$/;"	m	class:fuzzer::MutationDispatcher
+CurrentUnitData	FuzzerInternal.h	/^  uint8_t *CurrentUnitData = nullptr;$/;"	m	class:fuzzer::Fuzzer
+CurrentUnitSize	FuzzerInternal.h	/^  std::atomic<size_t> CurrentUnitSize;$/;"	m	class:fuzzer::Fuzzer
+CustomCrossOverInPlaceHere	FuzzerMutate.h	/^  std::vector<uint8_t> CustomCrossOverInPlaceHere;$/;"	m	class:fuzzer::MutationDispatcher
+D	test/LargeTest.cpp	26;"	d	file:
+DE	FuzzerDictionary.h	/^  DictionaryEntry DE[kMaxDictSize];$/;"	m	class:fuzzer::Dictionary
+DSO1	test/DSO1.cpp	/^int DSO1(int a) {$/;"	f
+DSO2	test/DSO2.cpp	/^int DSO2(int a) {$/;"	f
+DSOTestExtra	test/DSOTestExtra.cpp	/^int DSOTestExtra(int a) {$/;"	f
+Data	FuzzerDictionary.h	/^  uint8_t Data[kMaxSize];$/;"	m	class:fuzzer::FixedWord
+Data	FuzzerShmem.h	/^  uint8_t *Data = nullptr;$/;"	m	class:fuzzer::SharedMemoryRegion
+DeathCallback	FuzzerLoop.cpp	/^void Fuzzer::DeathCallback() {$/;"	f	class:fuzzer::Fuzzer
+Default	FuzzerDriver.cpp	/^  int   Default;$/;"	m	struct:fuzzer::FlagDescription	file:
+DefaultMutate	FuzzerMutate.cpp	/^size_t MutationDispatcher::DefaultMutate(uint8_t *Data, size_t Size,$/;"	f	class:fuzzer::MutationDispatcher
+DefaultMutators	FuzzerMutate.h	/^  std::vector<Mutator> DefaultMutators;$/;"	m	class:fuzzer::MutationDispatcher
+DeleteFile	FuzzerCorpus.h	/^  void DeleteFile(const InputInfo &II) {$/;"	f	class:fuzzer::InputCorpus
+DeleteInput	FuzzerCorpus.h	/^  void DeleteInput(size_t Idx) {$/;"	f	class:fuzzer::InputCorpus
+DescribePC	FuzzerUtil.cpp	/^std::string DescribePC(const char *SymbolizedFMT, uintptr_t PC) {$/;"	f	namespace:fuzzer
+Description	FuzzerDriver.cpp	/^  const char *Description;$/;"	m	struct:fuzzer::FlagDescription	file:
+Destroy	FuzzerShmemPosix.cpp	/^bool SharedMemoryRegion::Destroy(const char *Name) {$/;"	f	class:fuzzer::SharedMemoryRegion
+Destroy	FuzzerShmemWindows.cpp	/^bool SharedMemoryRegion::Destroy(const char *Name) {$/;"	f	class:fuzzer::SharedMemoryRegion
+DetectLeaks	FuzzerOptions.h	/^  bool DetectLeaks = true;$/;"	m	struct:fuzzer::FuzzingOptions
+Dictionary	FuzzerDictionary.h	/^class Dictionary {$/;"	c	namespace:fuzzer
+DictionaryEntry	FuzzerDictionary.h	/^  DictionaryEntry() {}$/;"	f	class:fuzzer::DictionaryEntry
+DictionaryEntry	FuzzerDictionary.h	/^  DictionaryEntry(Word W) : W(W) {}$/;"	f	class:fuzzer::DictionaryEntry
+DictionaryEntry	FuzzerDictionary.h	/^  DictionaryEntry(Word W, size_t PositionHint) : W(W), PositionHint(PositionHint) {}$/;"	f	class:fuzzer::DictionaryEntry
+DictionaryEntry	FuzzerDictionary.h	/^class DictionaryEntry {$/;"	c	namespace:fuzzer
+DifferentialMode	FuzzerOptions.h	/^  bool DifferentialMode = false;$/;"	m	struct:fuzzer::FuzzingOptions
+DirName	FuzzerIOPosix.cpp	/^std::string DirName(const std::string &FileName) {$/;"	f	namespace:fuzzer
+DirName	FuzzerIOWindows.cpp	/^std::string DirName(const std::string &FileName) {$/;"	f	namespace:fuzzer
+DirPlusFile	FuzzerIO.cpp	/^std::string DirPlusFile(const std::string &DirPath,$/;"	f	namespace:fuzzer
+DisassembleCmd	FuzzerUtilPosix.cpp	/^std::string DisassembleCmd(const std::string &FileName) {$/;"	f	namespace:fuzzer
+DisassembleCmd	FuzzerUtilWindows.cpp	/^std::string DisassembleCmd(const std::string &FileName) {$/;"	f	namespace:fuzzer
+DiscardOutput	FuzzerIOPosix.cpp	/^void DiscardOutput(int Fd) {$/;"	f	namespace:fuzzer
+DiscardOutput	FuzzerIOWindows.cpp	/^void DiscardOutput(int Fd) {$/;"	f	namespace:fuzzer
+DoCrossOver	FuzzerOptions.h	/^  bool DoCrossOver = true;$/;"	m	struct:fuzzer::FuzzingOptions
+DoPrintNewPCs	FuzzerTracePC.h	/^  bool DoPrintNewPCs = false;$/;"	m	class:fuzzer::TracePC
+DoingMyOwnMemOrStr	FuzzerDefs.h	/^  static int DoingMyOwnMemOrStr;$/;"	m	struct:fuzzer::ScopedDoingMyOwnMemOrStr
+DoingMyOwnMemOrStr	FuzzerTracePC.cpp	/^int ScopedDoingMyOwnMemOrStr::DoingMyOwnMemOrStr;$/;"	m	class:fuzzer::ScopedDoingMyOwnMemOrStr	file:
+DumpCoverage	FuzzerOptions.h	/^  bool DumpCoverage = false;$/;"	m	struct:fuzzer::FuzzingOptions
+DumpCoverage	FuzzerTracePC.cpp	/^void TracePC::DumpCoverage() {$/;"	f	class:fuzzer::TracePC
+DumpCurrentUnit	FuzzerLoop.cpp	/^void Fuzzer::DumpCurrentUnit(const char *Prefix) {$/;"	f	class:fuzzer::Fuzzer
+DupAndCloseStderr	FuzzerIO.cpp	/^void DupAndCloseStderr() {$/;"	f	namespace:fuzzer
+DuplicateFile	FuzzerIOPosix.cpp	/^int DuplicateFile(int Fd) {$/;"	f	namespace:fuzzer
+DuplicateFile	FuzzerIOWindows.cpp	/^int DuplicateFile(int Fd) {$/;"	f	namespace:fuzzer
+E	test/LargeTest.cpp	27;"	d	file:
+EF	FuzzerDriver.cpp	/^ExternalFunctions *EF = nullptr;$/;"	m	namespace:fuzzer	file:
+EQ	test/FuzzerUnittest.cpp	/^void EQ(const std::vector<std::string> &A, const std::vector<std::string> &B) {$/;"	f
+EQ	test/FuzzerUnittest.cpp	/^void EQ(const std::vector<uint32_t> &A, const std::vector<uint32_t> &B) {$/;"	f
+EXT_FUNC	FuzzerExtFunctions.h	32;"	d
+EXT_FUNC	FuzzerExtFunctions.h	37;"	d
+EXT_FUNC	FuzzerExtFunctionsDlsym.cpp	42;"	d	file:
+EXT_FUNC	FuzzerExtFunctionsDlsym.cpp	47;"	d	file:
+EXT_FUNC	FuzzerExtFunctionsDlsymWin.cpp	42;"	d	file:
+EXT_FUNC	FuzzerExtFunctionsDlsymWin.cpp	50;"	d	file:
+EXT_FUNC	FuzzerExtFunctionsDlsymWin.cpp	53;"	d	file:
+EXT_FUNC	FuzzerExtFunctionsDlsymWin.cpp	57;"	d	file:
+EXT_FUNC	FuzzerExtFunctionsWeak.cpp	23;"	d	file:
+EXT_FUNC	FuzzerExtFunctionsWeak.cpp	28;"	d	file:
+EXT_FUNC	FuzzerExtFunctionsWeak.cpp	42;"	d	file:
+EXT_FUNC	FuzzerExtFunctionsWeak.cpp	49;"	d	file:
+EXT_FUNC	FuzzerExtFunctionsWeakAlias.cpp	21;"	d	file:
+EXT_FUNC	FuzzerExtFunctionsWeakAlias.cpp	30;"	d	file:
+EXT_FUNC	FuzzerExtFunctionsWeakAlias.cpp	46;"	d	file:
+EXT_FUNC	FuzzerExtFunctionsWeakAlias.cpp	51;"	d	file:
+EmptyWord	FuzzerTracePC.h	/^  Word EmptyWord;$/;"	m	struct:fuzzer::MemMemTable
+EpochOfLastReadOfOutputCorpus	FuzzerInternal.h	/^  long EpochOfLastReadOfOutputCorpus = 0;$/;"	m	class:fuzzer::Fuzzer
+Eq	test/StrcmpTest.cpp	/^bool Eq(const uint8_t *Data, size_t Size, const char *Str) {$/;"	f
+ErrorExitCode	FuzzerOptions.h	/^  int ErrorExitCode = 77;$/;"	m	struct:fuzzer::FuzzingOptions
+ExactArtifactPath	FuzzerOptions.h	/^  std::string ExactArtifactPath;$/;"	m	struct:fuzzer::FuzzingOptions
+ExceptionHandler	FuzzerUtilWindows.cpp	/^static LONG CALLBACK ExceptionHandler(PEXCEPTION_POINTERS ExceptionInfo) {$/;"	f	namespace:fuzzer
+ExecuteCallback	FuzzerLoop.cpp	/^void Fuzzer::ExecuteCallback(const uint8_t *Data, size_t Size) {$/;"	f	class:fuzzer::Fuzzer
+ExecuteCommand	FuzzerUtilDarwin.cpp	/^int ExecuteCommand(const std::string &Command) {$/;"	f	namespace:fuzzer
+ExecuteCommand	FuzzerUtilLinux.cpp	/^int ExecuteCommand(const std::string &Command) {$/;"	f	namespace:fuzzer
+ExecuteCommand	FuzzerUtilWindows.cpp	/^int ExecuteCommand(const std::string &Command) {$/;"	f	namespace:fuzzer
+ExecuteCommandAndReadOutput	FuzzerUtil.cpp	/^bool ExecuteCommandAndReadOutput(const std::string &Command, std::string *Out) {$/;"	f	namespace:fuzzer
+ExecuteFilesOnyByOne	afl/afl_driver.cpp	/^int ExecuteFilesOnyByOne(int argc, char **argv) {$/;"	f
+ExitOnItem	FuzzerOptions.h	/^  std::string ExitOnItem;$/;"	m	struct:fuzzer::FuzzingOptions
+ExitOnSrcPos	FuzzerOptions.h	/^  std::string ExitOnSrcPos;$/;"	m	struct:fuzzer::FuzzingOptions
+ExperimentalLenControl	FuzzerOptions.h	/^  bool ExperimentalLenControl = false;$/;"	m	struct:fuzzer::FuzzingOptions
+ExternalFunctions	FuzzerExtFunctions.h	/^struct ExternalFunctions {$/;"	s	namespace:fuzzer
+ExternalFunctions	FuzzerExtFunctionsDlsym.cpp	/^ExternalFunctions::ExternalFunctions() {$/;"	f	class:fuzzer::ExternalFunctions
+ExternalFunctions	FuzzerExtFunctionsDlsymWin.cpp	/^ExternalFunctions::ExternalFunctions() {$/;"	f	class:fuzzer::ExternalFunctions
+ExternalFunctions	FuzzerExtFunctionsWeak.cpp	/^ExternalFunctions::ExternalFunctions() {$/;"	f	class:fuzzer::ExternalFunctions
+ExternalFunctions	FuzzerExtFunctionsWeakAlias.cpp	/^ExternalFunctions::ExternalFunctions() {$/;"	f	class:fuzzer::ExternalFunctions
+ExtraCountersBegin	FuzzerExtraCounters.cpp	/^uint8_t *ExtraCountersBegin() { return &__start___libfuzzer_extra_counters; }$/;"	f	namespace:fuzzer
+ExtraCountersEnd	FuzzerExtraCounters.cpp	/^uint8_t *ExtraCountersEnd() { return &__stop___libfuzzer_extra_counters; }$/;"	f	namespace:fuzzer
+F	FuzzerLoop.cpp	/^static Fuzzer *F;$/;"	m	namespace:fuzzer	file:
+F	test/CallerCalleeTest.cpp	/^typedef void (*F)();$/;"	t	file:
+FUZZER_DEPRECATED_FLAG	FuzzerDriver.cpp	45;"	d	file:
+FUZZER_DEPRECATED_FLAG	FuzzerDriver.cpp	50;"	d	file:
+FUZZER_DEPRECATED_FLAG	FuzzerDriver.cpp	57;"	d	file:
+FUZZER_DEPRECATED_FLAG	FuzzerDriver.cpp	67;"	d	file:
+FUZZER_FLAG_INT	FuzzerDriver.cpp	46;"	d	file:
+FUZZER_FLAG_INT	FuzzerDriver.cpp	51;"	d	file:
+FUZZER_FLAG_INT	FuzzerDriver.cpp	59;"	d	file:
+FUZZER_FLAG_INT	FuzzerDriver.cpp	68;"	d	file:
+FUZZER_FLAG_STRING	FuzzerDriver.cpp	48;"	d	file:
+FUZZER_FLAG_STRING	FuzzerDriver.cpp	53;"	d	file:
+FUZZER_FLAG_STRING	FuzzerDriver.cpp	64;"	d	file:
+FUZZER_FLAG_STRING	FuzzerDriver.cpp	70;"	d	file:
+FUZZER_FLAG_UNSIGNED	FuzzerDriver.cpp	47;"	d	file:
+FUZZER_FLAG_UNSIGNED	FuzzerDriver.cpp	52;"	d	file:
+FUZZER_FLAG_UNSIGNED	FuzzerDriver.cpp	61;"	d	file:
+FUZZER_FLAG_UNSIGNED	FuzzerDriver.cpp	69;"	d	file:
+FeatureDebug	FuzzerCorpus.h	/^  static const bool FeatureDebug = false;$/;"	m	class:fuzzer::InputCorpus
+FeatureSet	FuzzerCorpus.h	/^  std::vector<uint32_t> FeatureSet;$/;"	m	struct:fuzzer::InputInfo
+FeatureSetTmp	FuzzerInternal.h	/^  std::vector<uint32_t> FeatureSetTmp;$/;"	m	class:fuzzer::Fuzzer
+FeatureTraceDiff	FuzzerTracePC.h	/^  SetOfIntVectors FeatureTraceDiff;$/;"	m	class:fuzzer::TracePC
+Features	FuzzerMerge.h	/^  std::vector<uint32_t> Features;$/;"	m	struct:fuzzer::MergeFileInfo
+FileSizeExceedHandler	FuzzerUtilPosix.cpp	/^static void FileSizeExceedHandler(int, siginfo_t *, void *) {$/;"	f	namespace:fuzzer
+FileToString	FuzzerIO.cpp	/^std::string FileToString(const std::string &Path) {$/;"	f	namespace:fuzzer
+FileToVector	FuzzerIO.cpp	/^Unit FileToVector(const std::string &Path, size_t MaxSize, bool ExitOnError) {$/;"	f	namespace:fuzzer
+Files	FuzzerMerge.h	/^  std::vector<MergeFileInfo> Files;$/;"	m	struct:fuzzer::Merger
+FirstNotProcessedFile	FuzzerMerge.h	/^  size_t FirstNotProcessedFile = 0;$/;"	m	struct:fuzzer::Merger
+FixedWord	FuzzerDictionary.h	/^  FixedWord() {}$/;"	f	class:fuzzer::FixedWord
+FixedWord	FuzzerDictionary.h	/^  FixedWord(const uint8_t *B, uint8_t S) { Set(B, S); }$/;"	f	class:fuzzer::FixedWord
+FixedWord	FuzzerDictionary.h	/^template <size_t kMaxSizeT> class FixedWord {$/;"	c	namespace:fuzzer
+FlagDescription	FuzzerDriver.cpp	/^struct FlagDescription {$/;"	s	namespace:fuzzer	file:
+FlagValue	FuzzerDriver.cpp	/^static const char *FlagValue(const char *Param, const char *Name) {$/;"	f	namespace:fuzzer
+Flags	FuzzerDriver.cpp	/^} Flags;$/;"	m	namespace:fuzzer	typeref:struct:fuzzer::__anon1	file:
+Flags	test/FlagsTest.cpp	/^static std::vector<std::string> Flags;$/;"	v	file:
+Fn	FuzzerMutate.h	/^    size_t (MutationDispatcher::*Fn)(uint8_t *Data, size_t Size, size_t Max);$/;"	m	struct:fuzzer::MutationDispatcher::Mutator
+Foo	test/TwoDifferentBugsTest.cpp	/^void Foo() { Null[1] = 0; }$/;"	f
+ForEach	FuzzerValueBitMap.h	/^  void ForEach(Callback CB) const {$/;"	f	struct:fuzzer::ValueBitMap
+ForEachNonZeroByte	FuzzerTracePC.h	/^void ForEachNonZeroByte(const uint8_t *Begin, const uint8_t *End,$/;"	f	namespace:fuzzer
+FreeHook	FuzzerLoop.cpp	/^void FreeHook(const volatile void *ptr) {$/;"	f	namespace:fuzzer
+Frees	FuzzerLoop.cpp	/^  std::atomic<size_t> Frees;$/;"	m	struct:fuzzer::MallocFreeTracer	file:
+Fuzzer	FuzzerInternal.h	/^class Fuzzer {$/;"	c	namespace:fuzzer
+Fuzzer	FuzzerLoop.cpp	/^Fuzzer::Fuzzer(UserCallback CB, InputCorpus &Corpus, MutationDispatcher &MD,$/;"	f	class:fuzzer::Fuzzer
+FuzzerDriver	FuzzerDriver.cpp	/^int FuzzerDriver(int *argc, char ***argv, UserCallback Callback) {$/;"	f	namespace:fuzzer
+FuzzingOptions	FuzzerOptions.h	/^struct FuzzingOptions {$/;"	s	namespace:fuzzer
+GTEST_NO_LLVM_RAW_OSTREAM	test/FuzzerUnittest.cpp	9;"	d	file:
+Get	FuzzerTracePC.h	/^  Pair Get(size_t I) { return Table[I % kSize]; }$/;"	f	struct:fuzzer::TableOfRecentCompares
+Get	FuzzerTracePC.h	/^  const Word &Get(size_t Idx) {$/;"	f	struct:fuzzer::MemMemTable
+Get	FuzzerValueBitMap.h	/^  inline bool Get(uintptr_t Idx) {$/;"	f	struct:fuzzer::ValueBitMap
+GetByteArray	FuzzerShmem.h	/^  uint8_t *GetByteArray() { return GetData() + sizeof(size_t); }$/;"	f	class:fuzzer::SharedMemoryRegion
+GetCurrentUnitInFuzzingThead	FuzzerLoop.cpp	/^size_t Fuzzer::GetCurrentUnitInFuzzingThead(const uint8_t **Data) const {$/;"	f	class:fuzzer::Fuzzer
+GetData	FuzzerShmem.h	/^  uint8_t *GetData() { return Data; }$/;"	f	class:fuzzer::SharedMemoryRegion
+GetDedupTokenFromFile	FuzzerDriver.cpp	/^static std::string GetDedupTokenFromFile(const std::string &Path) {$/;"	f	namespace:fuzzer
+GetEpoch	FuzzerIO.cpp	/^long GetEpoch(const std::string &Path) {$/;"	f	namespace:fuzzer
+GetFeature	FuzzerCorpus.h	/^  size_t GetFeature(size_t Idx) const { return InputSizesPerFeature[Idx]; }$/;"	f	class:fuzzer::InputCorpus
+GetFnPtr	FuzzerExtFunctionsDlsym.cpp	/^static T GetFnPtr(const char *FnName, bool WarnIfMissing) {$/;"	f	file:
+GetFnPtr	FuzzerExtFunctionsWeakAlias.cpp	/^static T *GetFnPtr(T *Fun, T *FunDef, const char *FnName, bool WarnIfMissing) {$/;"	f	file:
+GetHandleFromFd	FuzzerIOPosix.cpp	/^intptr_t GetHandleFromFd(int fd) {$/;"	f	namespace:fuzzer
+GetHandleFromFd	FuzzerIOWindows.cpp	/^intptr_t GetHandleFromFd(int fd) {$/;"	f	namespace:fuzzer
+GetMD	FuzzerInternal.h	/^  MutationDispatcher &GetMD() { return MD; }$/;"	f	class:fuzzer::Fuzzer
+GetMaxSize	FuzzerDictionary.h	/^  static size_t GetMaxSize() { return kMaxSize; }$/;"	f	class:fuzzer::FixedWord
+GetNumBitsSinceLastMerge	FuzzerValueBitMap.h	/^  size_t GetNumBitsSinceLastMerge() const { return NumBits; }$/;"	f	struct:fuzzer::ValueBitMap
+GetNumPCs	FuzzerTracePC.h	/^  size_t GetNumPCs() const {$/;"	f	class:fuzzer::TracePC
+GetPC	FuzzerTracePC.h	/^  uintptr_t GetPC(size_t Idx) {$/;"	f	class:fuzzer::TracePC
+GetPeakRSSMb	FuzzerUtilPosix.cpp	/^size_t GetPeakRSSMb() {$/;"	f	namespace:fuzzer
+GetPeakRSSMb	FuzzerUtilWindows.cpp	/^size_t GetPeakRSSMb() {$/;"	f	namespace:fuzzer
+GetPeakRSSMb	afl/afl_driver.cpp	/^size_t GetPeakRSSMb() {$/;"	f
+GetPid	FuzzerUtilPosix.cpp	/^unsigned long GetPid() { return (unsigned long)getpid(); }$/;"	f	namespace:fuzzer
+GetPid	FuzzerUtilWindows.cpp	/^unsigned long GetPid() { return GetCurrentProcessId(); }$/;"	f	namespace:fuzzer
+GetPositionHint	FuzzerDictionary.h	/^  size_t GetPositionHint() const {$/;"	f	class:fuzzer::DictionaryEntry
+GetPreviousInstructionPc	FuzzerTracePC.cpp	/^inline ALWAYS_INLINE uintptr_t GetPreviousInstructionPc(uintptr_t PC) {$/;"	f	namespace:fuzzer
+GetRand	FuzzerMutate.h	/^  Random &GetRand() { return Rand; }$/;"	f	class:fuzzer::MutationDispatcher
+GetSeparator	FuzzerIOPosix.cpp	/^char GetSeparator() {$/;"	f	namespace:fuzzer
+GetSeparator	FuzzerIOWindows.cpp	/^char GetSeparator() {$/;"	f	namespace:fuzzer
+GetSuccessCount	FuzzerDictionary.h	/^  size_t GetSuccessCount() const {return SuccessCount; }$/;"	f	class:fuzzer::DictionaryEntry
+GetTotalPCCoverage	FuzzerTracePC.cpp	/^size_t TracePC::GetTotalPCCoverage() {$/;"	f	class:fuzzer::TracePC
+GetUseCount	FuzzerDictionary.h	/^  size_t GetUseCount() const { return UseCount; }$/;"	f	class:fuzzer::DictionaryEntry
+GetW	FuzzerDictionary.h	/^  const Word &GetW() const { return W; }$/;"	f	class:fuzzer::DictionaryEntry
+HASH_LENGTH	FuzzerSHA1.cpp	51;"	d	file:
+HandleAbrt	FuzzerOptions.h	/^  bool HandleAbrt = false;$/;"	m	struct:fuzzer::FuzzingOptions
+HandleBus	FuzzerOptions.h	/^  bool HandleBus = false;$/;"	m	struct:fuzzer::FuzzingOptions
+HandleCallerCallee	FuzzerTracePC.cpp	/^void TracePC::HandleCallerCallee(uintptr_t Caller, uintptr_t Callee) {$/;"	f	class:fuzzer::TracePC
+HandleCmp	FuzzerTracePC.cpp	/^void TracePC::HandleCmp(uintptr_t PC, T Arg1, T Arg2) {$/;"	f	class:fuzzer::TracePC
+HandleFpe	FuzzerOptions.h	/^  bool HandleFpe = false;$/;"	m	struct:fuzzer::FuzzingOptions
+HandleIll	FuzzerOptions.h	/^  bool HandleIll = false;$/;"	m	struct:fuzzer::FuzzingOptions
+HandleInit	FuzzerTracePC.cpp	/^void TracePC::HandleInit(uint32_t *Start, uint32_t *Stop) {$/;"	f	class:fuzzer::TracePC
+HandleInline8bitCountersInit	FuzzerTracePC.cpp	/^void TracePC::HandleInline8bitCountersInit(uint8_t *Start, uint8_t *Stop) {$/;"	f	class:fuzzer::TracePC
+HandleInt	FuzzerOptions.h	/^  bool HandleInt = false;$/;"	m	struct:fuzzer::FuzzingOptions
+HandleMalloc	FuzzerLoop.cpp	/^void Fuzzer::HandleMalloc(size_t Size) {$/;"	f	class:fuzzer::Fuzzer
+HandleSegv	FuzzerOptions.h	/^  bool HandleSegv = false;$/;"	m	struct:fuzzer::FuzzingOptions
+HandleTerm	FuzzerOptions.h	/^  bool HandleTerm = false;$/;"	m	struct:fuzzer::FuzzingOptions
+HandleXfsz	FuzzerOptions.h	/^  bool HandleXfsz = false;$/;"	m	struct:fuzzer::FuzzingOptions
+HandlerOpt	FuzzerUtilWindows.cpp	/^static const FuzzingOptions* HandlerOpt = nullptr;$/;"	m	namespace:fuzzer	file:
+HasMoreMallocsThanFrees	FuzzerInternal.h	/^  bool HasMoreMallocsThanFrees = false;$/;"	m	class:fuzzer::Fuzzer
+HasPositionHint	FuzzerDictionary.h	/^  bool HasPositionHint() const { return PositionHint != std::numeric_limits<size_t>::max(); }$/;"	f	class:fuzzer::DictionaryEntry
+HasUnit	FuzzerCorpus.h	/^  bool HasUnit(const Unit &U) { return Hashes.count(Hash(U)); }$/;"	f	class:fuzzer::InputCorpus
+HasUnit	FuzzerCorpus.h	/^  bool HasUnit(const std::string &H) { return Hashes.count(H); }$/;"	f	class:fuzzer::InputCorpus
+Hash	FuzzerSHA1.cpp	/^std::string Hash(const Unit &U) {$/;"	f	namespace:fuzzer
+Hashes	FuzzerCorpus.h	/^  std::unordered_set<std::string> Hashes;$/;"	m	class:fuzzer::InputCorpus
+IAmServer	FuzzerShmem.h	/^  bool IAmServer;$/;"	m	class:fuzzer::SharedMemoryRegion
+InFuzzingThread	FuzzerInternal.h	/^  bool InFuzzingThread() const { return IsMyThread; }$/;"	f	class:fuzzer::Fuzzer
+IncSuccessCount	FuzzerDictionary.h	/^  void IncSuccessCount() { SuccessCount++; }$/;"	f	class:fuzzer::DictionaryEntry
+IncUseCount	FuzzerDictionary.h	/^  void IncUseCount() { UseCount++; }$/;"	f	class:fuzzer::DictionaryEntry
+InitializeDiffCallbacks	FuzzerTracePC.cpp	/^void TracePC::InitializeDiffCallbacks(ExternalFunctions *EF) {$/;"	f	class:fuzzer::TracePC
+InitializePrintNewPCs	FuzzerTracePC.cpp	/^void TracePC::InitializePrintNewPCs() {$/;"	f	class:fuzzer::TracePC
+InputCorpus	FuzzerCorpus.h	/^  InputCorpus(const std::string &OutputCorpus) : OutputCorpus(OutputCorpus) {$/;"	f	class:fuzzer::InputCorpus
+InputCorpus	FuzzerCorpus.h	/^class InputCorpus {$/;"	c	namespace:fuzzer
+InputInfo	FuzzerCorpus.h	/^struct InputInfo {$/;"	s	namespace:fuzzer
+InputSizesPerFeature	FuzzerCorpus.h	/^  uint32_t InputSizesPerFeature[kFeatureSetSize];$/;"	m	class:fuzzer::InputCorpus
+Inputs	FuzzerCorpus.h	/^  std::vector<InputInfo*> Inputs;$/;"	m	class:fuzzer::InputCorpus
+Inputs	FuzzerDriver.cpp	/^static std::vector<std::string> *Inputs;$/;"	m	namespace:fuzzer	file:
+Insert	FuzzerTracePC.h	/^  void Insert(size_t Idx, const T &Arg1, const T &Arg2) {$/;"	f	struct:fuzzer::TableOfRecentCompares
+InsertPartOf	FuzzerMutate.cpp	/^size_t MutationDispatcher::InsertPartOf(const uint8_t *From, size_t FromSize,$/;"	f	class:fuzzer::MutationDispatcher
+IntFlag	FuzzerDriver.cpp	/^  int   *IntFlag;$/;"	m	struct:fuzzer::FlagDescription	file:
+InternalStrnlen	FuzzerTracePC.cpp	/^static size_t InternalStrnlen(const char *S, size_t MaxLen) {$/;"	f	namespace:fuzzer
+InternalStrnlen2	FuzzerTracePC.cpp	/^static size_t InternalStrnlen2(const char *S1, const char *S2) {$/;"	f	namespace:fuzzer
+InterruptCallback	FuzzerLoop.cpp	/^void Fuzzer::InterruptCallback() {$/;"	f	class:fuzzer::Fuzzer
+InterruptHandler	FuzzerUtilPosix.cpp	/^static void InterruptHandler(int, siginfo_t *, void *) {$/;"	f	namespace:fuzzer
+Intervals	FuzzerCorpus.h	/^  std::vector<double> Intervals;$/;"	m	class:fuzzer::InputCorpus
+IsASCII	FuzzerUtil.cpp	/^bool IsASCII(const Unit &U) { return IsASCII(U.data(), U.size()); }$/;"	f	namespace:fuzzer
+IsASCII	FuzzerUtil.cpp	/^bool IsASCII(const uint8_t *Data, size_t Size) {$/;"	f	namespace:fuzzer
+IsClient	FuzzerShmem.h	/^  bool IsClient() const { return Data && !IAmServer; }$/;"	f	class:fuzzer::SharedMemoryRegion
+IsFile	FuzzerIOPosix.cpp	/^bool IsFile(const std::string &Path) {$/;"	f	namespace:fuzzer
+IsFile	FuzzerIOWindows.cpp	/^bool IsFile(const std::string &Path) {$/;"	f	namespace:fuzzer
+IsFile	FuzzerIOWindows.cpp	/^static bool IsFile(const std::string &Path, const DWORD &FileAttributes) {$/;"	f	namespace:fuzzer
+IsInterestingCoverageFile	FuzzerIOPosix.cpp	/^bool IsInterestingCoverageFile(const std::string &FileName) {$/;"	f	namespace:fuzzer
+IsInterestingCoverageFile	FuzzerIOWindows.cpp	/^bool IsInterestingCoverageFile(const std::string &FileName) {$/;"	f	namespace:fuzzer
+IsMyThread	FuzzerInternal.h	/^  static thread_local bool IsMyThread;$/;"	m	class:fuzzer::Fuzzer
+IsMyThread	FuzzerLoop.cpp	/^thread_local bool Fuzzer::IsMyThread;$/;"	m	class:fuzzer::Fuzzer	file:
+IsSeparator	FuzzerIOWindows.cpp	/^static bool IsSeparator(char C) {$/;"	f	namespace:fuzzer
+IsServer	FuzzerShmem.h	/^  bool IsServer() const { return Data && IAmServer; }$/;"	f	class:fuzzer::SharedMemoryRegion
+LIBFUZZER_APPLE	FuzzerDefs.h	24;"	d
+LIBFUZZER_APPLE	FuzzerDefs.h	28;"	d
+LIBFUZZER_APPLE	FuzzerDefs.h	32;"	d
+LIBFUZZER_APPLE	afl/afl_driver.cpp	70;"	d	file:
+LIBFUZZER_APPLE	afl/afl_driver.cpp	73;"	d	file:
+LIBFUZZER_LINUX	FuzzerDefs.h	25;"	d
+LIBFUZZER_LINUX	FuzzerDefs.h	29;"	d
+LIBFUZZER_LINUX	FuzzerDefs.h	33;"	d
+LIBFUZZER_LINUX	afl/afl_driver.cpp	69;"	d	file:
+LIBFUZZER_LINUX	afl/afl_driver.cpp	72;"	d	file:
+LIBFUZZER_POSIX	FuzzerDefs.h	43;"	d
+LIBFUZZER_WINDOWS	FuzzerDefs.h	26;"	d
+LIBFUZZER_WINDOWS	FuzzerDefs.h	30;"	d
+LIBFUZZER_WINDOWS	FuzzerDefs.h	34;"	d
+LLVMFuzzerAnnounceOutput	FuzzerLoop.cpp	/^void LLVMFuzzerAnnounceOutput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerCustomCrossOver	test/CustomCrossOverAndMutateTest.cpp	/^extern "C" size_t LLVMFuzzerCustomCrossOver(const uint8_t *Data1, size_t Size1,$/;"	f
+LLVMFuzzerCustomCrossOver	test/CustomCrossOverTest.cpp	/^extern "C" size_t LLVMFuzzerCustomCrossOver(const uint8_t *Data1, size_t Size1,$/;"	f
+LLVMFuzzerCustomMutator	test/CustomMutatorTest.cpp	/^extern "C" size_t LLVMFuzzerCustomMutator(uint8_t *Data, size_t Size,$/;"	f
+LLVMFuzzerInitialize	test/AFLDriverTest.cpp	/^extern "C" int LLVMFuzzerInitialize(int *argc, char ***argv) {$/;"	f
+LLVMFuzzerInitialize	test/BogusInitializeTest.cpp	/^extern "C" int LLVMFuzzerInitialize(int *argc, char ***argv) {$/;"	f
+LLVMFuzzerInitialize	test/FlagsTest.cpp	/^extern "C" int LLVMFuzzerInitialize(int *Argc, char ***Argv) {$/;"	f
+LLVMFuzzerInitialize	test/InitializeTest.cpp	/^extern "C" int LLVMFuzzerInitialize(int *argc, char ***argv) {$/;"	f
+LLVMFuzzerMutate	FuzzerLoop.cpp	/^size_t LLVMFuzzerMutate(uint8_t *Data, size_t Size, size_t MaxSize) {$/;"	f
+LLVMFuzzerMutate	afl/afl_driver.cpp	/^extern "C" size_t LLVMFuzzerMutate(uint8_t *Data, size_t Size, size_t MaxSize) {$/;"	f
+LLVMFuzzerTestOneInput	test/AFLDriverTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/AbsNegAndConstant64Test.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/AbsNegAndConstantTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/AccumulateAllocationsTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/BadStrcmpTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/BogusInitializeTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/BufferOverflowOnInput.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/CallerCalleeTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/CleanseTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/CounterTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/CustomCrossOverAndMutateTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/CustomCrossOverTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/CustomMutatorTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/CxxStringEqTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/DSOTestMain.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/DivTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/EmptyTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/EquivalenceATest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/EquivalenceBTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/FlagsTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/FourIndependentBranchesTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/FullCoverageSetTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/FuzzerUnittest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/InitializeTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/LargeTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/LeakTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/LeakTimeoutTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/LoadTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/Memcmp64BytesTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/MemcmpTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/NotinstrumentedTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/NthRunCrashTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/NullDerefOnEmptyTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/NullDerefTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/OneHugeAllocTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/OutOfMemorySingleLargeMallocTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/OutOfMemoryTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/OverwriteInputTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/RepeatedBytesTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/RepeatedMemcmp.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/ShrinkControlFlowSimpleTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/ShrinkControlFlowTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/ShrinkValueProfileTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/SignedIntOverflowTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/SimpleCmpTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/SimpleDictionaryTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/SimpleHashTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/SimpleTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/SimpleThreadedTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/SingleByteInputTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/SingleMemcmpTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/SingleStrcmpTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/SingleStrncmpTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/SpamyTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/StrcmpTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/StrncmpOOBTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/StrncmpTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/StrstrTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/SwapCmpTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/Switch2Test.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/SwitchTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/TableLookupTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/ThreadedLeakTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/ThreadedTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/TimeoutEmptyTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/TimeoutTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/TraceMallocTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVMFuzzerTestOneInput	test/TwoDifferentBugsTest.cpp	/^extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {$/;"	f
+LLVM_FUZZER_CORPUS	FuzzerCorpus.h	13;"	d
+LLVM_FUZZER_DEFS_H	FuzzerDefs.h	13;"	d
+LLVM_FUZZER_DICTIONARY_H	FuzzerDictionary.h	13;"	d
+LLVM_FUZZER_EXT_FUNCTIONS_H	FuzzerExtFunctions.h	13;"	d
+LLVM_FUZZER_INTERFACE_H	FuzzerInterface.h	20;"	d
+LLVM_FUZZER_INTERNAL_H	FuzzerInternal.h	13;"	d
+LLVM_FUZZER_IO_H	FuzzerIO.h	13;"	d
+LLVM_FUZZER_MERGE_H	FuzzerMerge.h	41;"	d
+LLVM_FUZZER_MUTATE_H	FuzzerMutate.h	13;"	d
+LLVM_FUZZER_OPTIONS_H	FuzzerOptions.h	12;"	d
+LLVM_FUZZER_RANDOM_H	FuzzerRandom.h	13;"	d
+LLVM_FUZZER_SHA1_H	FuzzerSHA1.h	13;"	d
+LLVM_FUZZER_SHMEM_H	FuzzerShmem.h	13;"	d
+LLVM_FUZZER_TRACE_PC	FuzzerTracePC.h	13;"	d
+LLVM_FUZZER_UTIL_H	FuzzerUtil.h	13;"	d
+LLVM_FUZZER_VALUE_BIT_MAP_H	FuzzerValueBitMap.h	13;"	d
+Large	test/SignedIntOverflowTest.cpp	/^static int Large = INT_MAX;$/;"	v	file:
+LastFailure	FuzzerMerge.h	/^  std::string LastFailure;$/;"	m	struct:fuzzer::Merger
+ListFilesInDirRecursive	FuzzerIOPosix.cpp	/^void ListFilesInDirRecursive(const std::string &Dir, long *Epoch,$/;"	f	namespace:fuzzer
+ListFilesInDirRecursive	FuzzerIOWindows.cpp	/^void ListFilesInDirRecursive(const std::string &Dir, long *Epoch,$/;"	f	namespace:fuzzer
+Loop	FuzzerLoop.cpp	/^void Fuzzer::Loop() {$/;"	f	class:fuzzer::Fuzzer
+LooseMemeq	FuzzerLoop.cpp	/^static bool LooseMemeq(const uint8_t *A, const uint8_t *B, size_t Size) {$/;"	f	namespace:fuzzer
+MD	FuzzerInternal.h	/^  MutationDispatcher &MD;$/;"	m	class:fuzzer::Fuzzer
+MMT	FuzzerTracePC.h	/^  MemMemTable<1024> MMT;$/;"	m	class:fuzzer::TracePC
+MakeDictionaryEntryFromCMP	FuzzerMutate.cpp	/^DictionaryEntry MutationDispatcher::MakeDictionaryEntryFromCMP($/;"	f	class:fuzzer::MutationDispatcher
+MallocFreeTracer	FuzzerLoop.cpp	/^struct MallocFreeTracer {$/;"	s	namespace:fuzzer	file:
+MallocHook	FuzzerLoop.cpp	/^void MallocHook(const volatile void *ptr, size_t size) {$/;"	f	namespace:fuzzer
+Mallocs	FuzzerLoop.cpp	/^  std::atomic<size_t> Mallocs;$/;"	m	struct:fuzzer::MallocFreeTracer	file:
+ManualDictionary	FuzzerMutate.h	/^  Dictionary ManualDictionary;$/;"	m	class:fuzzer::MutationDispatcher
+Map	FuzzerShmemPosix.cpp	/^bool SharedMemoryRegion::Map(int fd) {$/;"	f	class:fuzzer::SharedMemoryRegion
+Map	FuzzerShmemWindows.cpp	/^bool SharedMemoryRegion::Map(int fd) {$/;"	f	class:fuzzer::SharedMemoryRegion
+Map	FuzzerValueBitMap.h	/^  uintptr_t Map[kMapSizeInWords] __attribute__((aligned(512)));$/;"	m	struct:fuzzer::ValueBitMap
+Max	FuzzerDefs.h	/^template <class T> T Max(T a, T b) { return a > b ? a : b; }$/;"	f	namespace:fuzzer
+MaxInputLen	FuzzerInternal.h	/^  size_t MaxInputLen = 0;$/;"	m	class:fuzzer::Fuzzer
+MaxInputSize	FuzzerCorpus.h	/^  size_t MaxInputSize() const {$/;"	f	class:fuzzer::InputCorpus
+MaxLen	FuzzerOptions.h	/^  size_t MaxLen = 0;$/;"	m	struct:fuzzer::FuzzingOptions
+MaxMutationLen	FuzzerInternal.h	/^  size_t MaxMutationLen = 0;$/;"	m	class:fuzzer::Fuzzer
+MaxNumberOfRuns	FuzzerOptions.h	/^  size_t MaxNumberOfRuns = -1L;$/;"	m	struct:fuzzer::FuzzingOptions
+MaxTotalTimeSec	FuzzerOptions.h	/^  int MaxTotalTimeSec = 0;$/;"	m	struct:fuzzer::FuzzingOptions
+MayDeleteFile	FuzzerCorpus.h	/^  bool MayDeleteFile = false;$/;"	m	struct:fuzzer::InputInfo
+MemMemTable	FuzzerTracePC.h	/^struct MemMemTable {$/;"	s	namespace:fuzzer
+MemMemWords	FuzzerTracePC.h	/^  Word MemMemWords[kSize];$/;"	m	struct:fuzzer::MemMemTable
+Merge	FuzzerMerge.cpp	/^size_t Merger::Merge(const std::set<uint32_t> &InitialFeatures,$/;"	f	class:fuzzer::Merger
+Merge	FuzzerMerge.h	/^  size_t Merge(std::vector<std::string> *NewFiles) {$/;"	f	struct:fuzzer::Merger
+Merge	test/FuzzerUnittest.cpp	/^static void Merge(const std::string &Input,$/;"	f	file:
+MergeFileInfo	FuzzerMerge.h	/^struct MergeFileInfo {$/;"	s	namespace:fuzzer
+MergeFrom	FuzzerValueBitMap.h	/^  bool MergeFrom(ValueBitMap &Other) {$/;"	f	struct:fuzzer::ValueBitMap
+Merger	FuzzerMerge.h	/^struct Merger {$/;"	s	namespace:fuzzer
+Min	FuzzerDefs.h	/^template <class T> T Min(T a, T b) { return a < b ? a : b; }$/;"	f	namespace:fuzzer
+MinimizeCrashInput	FuzzerDriver.cpp	/^int MinimizeCrashInput(const std::vector<std::string> &Args,$/;"	f	namespace:fuzzer
+MinimizeCrashInputInternalStep	FuzzerDriver.cpp	/^int MinimizeCrashInputInternalStep(Fuzzer *F, InputCorpus *Corpus) {$/;"	f	namespace:fuzzer
+MinimizeCrashLoop	FuzzerLoop.cpp	/^void Fuzzer::MinimizeCrashLoop(const Unit &U) {$/;"	f	class:fuzzer::Fuzzer
+Module	FuzzerTracePC.h	/^  struct Module {$/;"	s	class:fuzzer::TracePC
+ModuleCounters	FuzzerTracePC.h	/^  struct { uint8_t *Start, *Stop; } ModuleCounters[4096];$/;"	m	class:fuzzer::TracePC	typeref:struct:fuzzer::TracePC::__anon3
+Modules	FuzzerTracePC.h	/^  Module Modules[4096];$/;"	m	class:fuzzer::TracePC
+Mu	FuzzerDriver.cpp	/^static std::mutex Mu;$/;"	m	namespace:fuzzer	file:
+Mutate	FuzzerMutate.cpp	/^size_t MutationDispatcher::Mutate(uint8_t *Data, size_t Size, size_t MaxSize) {$/;"	f	class:fuzzer::MutationDispatcher
+MutateAndTestOne	FuzzerLoop.cpp	/^void Fuzzer::MutateAndTestOne() {$/;"	f	class:fuzzer::Fuzzer
+MutateDepth	FuzzerOptions.h	/^  int MutateDepth = 5;$/;"	m	struct:fuzzer::FuzzingOptions
+MutateImpl	FuzzerMutate.cpp	/^size_t MutationDispatcher::MutateImpl(uint8_t *Data, size_t Size,$/;"	f	class:fuzzer::MutationDispatcher
+MutateInPlaceHere	FuzzerMutate.h	/^  std::vector<uint8_t> MutateInPlaceHere;$/;"	m	class:fuzzer::MutationDispatcher
+Mutate_AddWordFromManualDictionary	FuzzerMutate.cpp	/^size_t MutationDispatcher::Mutate_AddWordFromManualDictionary(uint8_t *Data,$/;"	f	class:fuzzer::MutationDispatcher
+Mutate_AddWordFromPersistentAutoDictionary	FuzzerMutate.cpp	/^size_t MutationDispatcher::Mutate_AddWordFromPersistentAutoDictionary($/;"	f	class:fuzzer::MutationDispatcher
+Mutate_AddWordFromTORC	FuzzerMutate.cpp	/^size_t MutationDispatcher::Mutate_AddWordFromTORC($/;"	f	class:fuzzer::MutationDispatcher
+Mutate_ChangeASCIIInteger	FuzzerMutate.cpp	/^size_t MutationDispatcher::Mutate_ChangeASCIIInteger(uint8_t *Data, size_t Size,$/;"	f	class:fuzzer::MutationDispatcher
+Mutate_ChangeBinaryInteger	FuzzerMutate.cpp	/^size_t MutationDispatcher::Mutate_ChangeBinaryInteger(uint8_t *Data,$/;"	f	class:fuzzer::MutationDispatcher
+Mutate_ChangeBit	FuzzerMutate.cpp	/^size_t MutationDispatcher::Mutate_ChangeBit(uint8_t *Data, size_t Size,$/;"	f	class:fuzzer::MutationDispatcher
+Mutate_ChangeByte	FuzzerMutate.cpp	/^size_t MutationDispatcher::Mutate_ChangeByte(uint8_t *Data, size_t Size,$/;"	f	class:fuzzer::MutationDispatcher
+Mutate_CopyPart	FuzzerMutate.cpp	/^size_t MutationDispatcher::Mutate_CopyPart(uint8_t *Data, size_t Size,$/;"	f	class:fuzzer::MutationDispatcher
+Mutate_CrossOver	FuzzerMutate.cpp	/^size_t MutationDispatcher::Mutate_CrossOver(uint8_t *Data, size_t Size,$/;"	f	class:fuzzer::MutationDispatcher
+Mutate_Custom	FuzzerMutate.cpp	/^size_t MutationDispatcher::Mutate_Custom(uint8_t *Data, size_t Size,$/;"	f	class:fuzzer::MutationDispatcher
+Mutate_CustomCrossOver	FuzzerMutate.cpp	/^size_t MutationDispatcher::Mutate_CustomCrossOver(uint8_t *Data, size_t Size,$/;"	f	class:fuzzer::MutationDispatcher
+Mutate_EraseBytes	FuzzerMutate.cpp	/^size_t MutationDispatcher::Mutate_EraseBytes(uint8_t *Data, size_t Size,$/;"	f	class:fuzzer::MutationDispatcher
+Mutate_InsertByte	FuzzerMutate.cpp	/^size_t MutationDispatcher::Mutate_InsertByte(uint8_t *Data, size_t Size,$/;"	f	class:fuzzer::MutationDispatcher
+Mutate_InsertRepeatedBytes	FuzzerMutate.cpp	/^size_t MutationDispatcher::Mutate_InsertRepeatedBytes(uint8_t *Data,$/;"	f	class:fuzzer::MutationDispatcher
+Mutate_ShuffleBytes	FuzzerMutate.cpp	/^size_t MutationDispatcher::Mutate_ShuffleBytes(uint8_t *Data, size_t Size,$/;"	f	class:fuzzer::MutationDispatcher
+MutationDispatcher	FuzzerMutate.cpp	/^MutationDispatcher::MutationDispatcher(Random &Rand,$/;"	f	class:fuzzer::MutationDispatcher
+MutationDispatcher	FuzzerMutate.h	/^class MutationDispatcher {$/;"	c	namespace:fuzzer
+Mutator	FuzzerMutate.h	/^  struct Mutator {$/;"	s	class:fuzzer::MutationDispatcher
+Mutator	test/FuzzerUnittest.cpp	/^typedef size_t (MutationDispatcher::*Mutator)(uint8_t *Data, size_t Size,$/;"	t	file:
+Mutators	FuzzerMutate.h	/^  std::vector<Mutator> Mutators;$/;"	m	class:fuzzer::MutationDispatcher
+MyStol	FuzzerDriver.cpp	/^static long MyStol(const char *Str) {$/;"	f	namespace:fuzzer
+N	test/TableLookupTest.cpp	/^const size_t N = 1 << 12;$/;"	v
+NO_SANITIZE_MEMORY	FuzzerLoop.cpp	30;"	d	file:
+NO_SANITIZE_MEMORY	FuzzerLoop.cpp	33;"	d	file:
+NO_SANITIZE_MEMORY	FuzzerLoop.cpp	34;"	d	file:
+Name	FuzzerDriver.cpp	/^  const char *Name;$/;"	m	struct:fuzzer::FlagDescription	file:
+Name	FuzzerMerge.h	/^  std::string Name;$/;"	m	struct:fuzzer::MergeFileInfo
+Name	FuzzerMutate.h	/^    const char *Name;$/;"	m	struct:fuzzer::MutationDispatcher::Mutator
+NewOutputDiff	FuzzerTracePC.cpp	/^bool TracePC::NewOutputDiff() {$/;"	f	class:fuzzer::TracePC
+NewTraceDiff	FuzzerTracePC.cpp	/^bool TracePC::NewTraceDiff(std::vector<int>& feature_v) {$/;"	f	class:fuzzer::TracePC
+Null	test/NullDerefOnEmptyTest.cpp	/^static volatile int *Null = 0;$/;"	v	file:
+Null	test/NullDerefTest.cpp	/^static volatile int *Null = 0;$/;"	v	file:
+Null	test/TwoDifferentBugsTest.cpp	/^static volatile int *Null = 0;$/;"	v	file:
+NumActiveUnits	FuzzerCorpus.h	/^  size_t NumActiveUnits() const {$/;"	f	class:fuzzer::InputCorpus
+NumAddedFeatures	FuzzerCorpus.h	/^  size_t NumAddedFeatures = 0;$/;"	m	class:fuzzer::InputCorpus
+NumAllocatedPointers	test/AccumulateAllocationsTest.cpp	/^int NumAllocatedPointers = 0;$/;"	v
+NumBits	FuzzerValueBitMap.h	/^  size_t NumBits = 0;$/;"	m	struct:fuzzer::ValueBitMap
+NumExecutedMutations	FuzzerCorpus.h	/^  size_t NumExecutedMutations = 0;$/;"	m	struct:fuzzer::InputInfo
+NumFeatureUpdates	FuzzerCorpus.h	/^  size_t NumFeatureUpdates() const { return NumUpdatedFeatures; }$/;"	f	class:fuzzer::InputCorpus
+NumFeatures	FuzzerCorpus.h	/^  size_t NumFeatures = 0;$/;"	m	struct:fuzzer::InputInfo
+NumFeatures	FuzzerCorpus.h	/^  size_t NumFeatures() const { return NumAddedFeatures; }$/;"	f	class:fuzzer::InputCorpus
+NumFilesInFirstCorpus	FuzzerMerge.h	/^  size_t NumFilesInFirstCorpus = 0;$/;"	m	struct:fuzzer::Merger
+NumGuards	FuzzerTracePC.h	/^  size_t NumGuards;  \/\/ linker-initialized.$/;"	m	class:fuzzer::TracePC
+NumInline8bitCounters	FuzzerTracePC.h	/^  size_t NumInline8bitCounters;$/;"	m	class:fuzzer::TracePC
+NumModules	FuzzerTracePC.h	/^  size_t NumModules;  \/\/ linker-initialized.$/;"	m	class:fuzzer::TracePC
+NumModulesWithInline8bitCounters	FuzzerTracePC.h	/^  size_t NumModulesWithInline8bitCounters;  \/\/ linker-initialized.$/;"	m	class:fuzzer::TracePC
+NumSuccessfullMutations	FuzzerCorpus.h	/^  size_t NumSuccessfullMutations = 0;$/;"	m	struct:fuzzer::InputInfo
+NumUpdatedFeatures	FuzzerCorpus.h	/^  size_t NumUpdatedFeatures = 0;$/;"	m	class:fuzzer::InputCorpus
+NumberOfCpuCores	FuzzerUtil.cpp	/^unsigned NumberOfCpuCores() {$/;"	f	namespace:fuzzer
+NumberOfDiffUnitsAdded	FuzzerInternal.h	/^  size_t NumberOfDiffUnitsAdded = 0;$/;"	m	class:fuzzer::Fuzzer
+NumberOfLeakDetectionAttempts	FuzzerInternal.h	/^  size_t NumberOfLeakDetectionAttempts = 0;$/;"	m	class:fuzzer::Fuzzer
+NumberOfNewUnitsAdded	FuzzerInternal.h	/^  size_t NumberOfNewUnitsAdded = 0;$/;"	m	class:fuzzer::Fuzzer
+OldBlockedSignalsSet	FuzzerUtilDarwin.cpp	/^static sigset_t OldBlockedSignalsSet;$/;"	m	namespace:fuzzer	file:
+OldSigIntAction	FuzzerUtilDarwin.cpp	/^static struct sigaction OldSigIntAction;$/;"	m	namespace:fuzzer	typeref:struct:fuzzer::sigaction	file:
+OldSigQuitAction	FuzzerUtilDarwin.cpp	/^static struct sigaction OldSigQuitAction;$/;"	m	namespace:fuzzer	typeref:struct:fuzzer::sigaction	file:
+OnlyASCII	FuzzerOptions.h	/^  bool OnlyASCII = false;$/;"	m	struct:fuzzer::FuzzingOptions
+Open	FuzzerShmemPosix.cpp	/^bool SharedMemoryRegion::Open(const char *Name) {$/;"	f	class:fuzzer::SharedMemoryRegion
+Open	FuzzerShmemWindows.cpp	/^bool SharedMemoryRegion::Open(const char *Name) {$/;"	f	class:fuzzer::SharedMemoryRegion
+OpenFile	FuzzerIOPosix.cpp	/^FILE* OpenFile(int Fd, const char* Mode) {$/;"	f	namespace:fuzzer
+OpenFile	FuzzerIOWindows.cpp	/^FILE* OpenFile(int Fd, const char* Mode) {$/;"	f	namespace:fuzzer
+OpenProcessPipe	FuzzerUtilPosix.cpp	/^FILE *OpenProcessPipe(const char *Command, const char *Mode) {$/;"	f	namespace:fuzzer
+OpenProcessPipe	FuzzerUtilWindows.cpp	/^FILE *OpenProcessPipe(const char *Command, const char *Mode) {$/;"	f	namespace:fuzzer
+Options	FuzzerInternal.h	/^  FuzzingOptions Options;$/;"	m	class:fuzzer::Fuzzer
+Options	FuzzerMutate.h	/^  const FuzzingOptions Options;$/;"	m	class:fuzzer::MutationDispatcher
+OutputCorpus	FuzzerCorpus.h	/^  std::string OutputCorpus;$/;"	m	class:fuzzer::InputCorpus
+OutputCorpus	FuzzerOptions.h	/^  std::string OutputCorpus;$/;"	m	struct:fuzzer::FuzzingOptions
+OutputDiffVec	FuzzerTracePC.h	/^  std::vector<int> OutputDiffVec;$/;"	m	class:fuzzer::TracePC
+OutputFile	FuzzerIO.cpp	/^static FILE *OutputFile = stderr;$/;"	m	namespace:fuzzer	file:
+OutputTraceDiff	FuzzerTracePC.h	/^  SetOfIntVectors OutputTraceDiff;$/;"	m	class:fuzzer::TracePC
+PCs	FuzzerTracePC.cpp	/^uintptr_t *TracePC::PCs() const {$/;"	f	class:fuzzer::TracePC
+Pair	FuzzerTracePC.h	/^  struct Pair {$/;"	s	struct:fuzzer::TableOfRecentCompares
+Parse	FuzzerMerge.cpp	/^bool Merger::Parse(const std::string &Str, bool ParseCoverage) {$/;"	f	class:fuzzer::Merger
+Parse	FuzzerMerge.cpp	/^bool Merger::Parse(std::istream &IS, bool ParseCoverage) {$/;"	f	class:fuzzer::Merger
+ParseCustomString	FuzzerIOWindows.cpp	/^static size_t ParseCustomString(const std::string &Ref, size_t Offset,$/;"	f	namespace:fuzzer
+ParseDictionaryFile	FuzzerUtil.cpp	/^bool ParseDictionaryFile(const std::string &Text, std::vector<Unit> *Units) {$/;"	f	namespace:fuzzer
+ParseDir	FuzzerIOWindows.cpp	/^static size_t ParseDir(const std::string &FileName, const size_t Offset) {$/;"	f	namespace:fuzzer
+ParseDrive	FuzzerIOWindows.cpp	/^static size_t ParseDrive(const std::string &FileName, const size_t Offset,$/;"	f	namespace:fuzzer
+ParseFileName	FuzzerIOWindows.cpp	/^static size_t ParseFileName(const std::string &FileName, const size_t Offset) {$/;"	f	namespace:fuzzer
+ParseFlags	FuzzerDriver.cpp	/^static void ParseFlags(const std::vector<std::string> &Args) {$/;"	f	namespace:fuzzer
+ParseLocation	FuzzerIOWindows.cpp	/^static size_t ParseLocation(const std::string &FileName) {$/;"	f	namespace:fuzzer
+ParseOneDictionaryEntry	FuzzerUtil.cpp	/^bool ParseOneDictionaryEntry(const std::string &Str, Unit *U) {$/;"	f	namespace:fuzzer
+ParseOneFlag	FuzzerDriver.cpp	/^static bool ParseOneFlag(const char *Param) {$/;"	f	namespace:fuzzer
+ParseOrExit	FuzzerMerge.cpp	/^void Merger::ParseOrExit(std::istream &IS, bool ParseCoverage) {$/;"	f	class:fuzzer::Merger
+ParseServerAndShare	FuzzerIOWindows.cpp	/^static size_t ParseServerAndShare(const std::string &FileName,$/;"	f	namespace:fuzzer
+ParseSummary	FuzzerMerge.cpp	/^std::set<uint32_t> Merger::ParseSummary(std::istream &IS) {$/;"	f	class:fuzzer::Merger
+Path	FuzzerShmemPosix.cpp	/^std::string SharedMemoryRegion::Path(const char *Name) {$/;"	f	class:fuzzer::SharedMemoryRegion
+Path	FuzzerShmemWindows.cpp	/^std::string SharedMemoryRegion::Path(const char *Name) {$/;"	f	class:fuzzer::SharedMemoryRegion
+PersistentAutoDictionary	FuzzerMutate.h	/^  Dictionary PersistentAutoDictionary;$/;"	m	class:fuzzer::MutationDispatcher
+PositionHint	FuzzerDictionary.h	/^  size_t PositionHint = std::numeric_limits<size_t>::max();$/;"	m	class:fuzzer::DictionaryEntry
+Post	FuzzerShmemPosix.cpp	/^void SharedMemoryRegion::Post(int Idx) {$/;"	f	class:fuzzer::SharedMemoryRegion
+Post	FuzzerShmemWindows.cpp	/^void SharedMemoryRegion::Post(int Idx) {$/;"	f	class:fuzzer::SharedMemoryRegion
+PostClient	FuzzerShmem.h	/^  void PostClient() {Post(1);}$/;"	f	class:fuzzer::SharedMemoryRegion
+PostServer	FuzzerShmem.h	/^  void PostServer() {Post(0);}$/;"	f	class:fuzzer::SharedMemoryRegion
+PreferSmall	FuzzerOptions.h	/^  bool PreferSmall = true;$/;"	m	struct:fuzzer::FuzzingOptions
+Print	FuzzerDictionary.h	/^  void Print(const char *PrintAfter = "\\n") {$/;"	f	class:fuzzer::DictionaryEntry
+Print	FuzzerUtil.cpp	/^void Print(const Unit &v, const char *PrintAfter) {$/;"	f	namespace:fuzzer
+PrintASCII	FuzzerMutate.cpp	/^static void PrintASCII(const Word &W, const char *PrintAfter) {$/;"	f	namespace:fuzzer
+PrintASCII	FuzzerUtil.cpp	/^void PrintASCII(const Unit &U, const char *PrintAfter) {$/;"	f	namespace:fuzzer
+PrintASCII	FuzzerUtil.cpp	/^void PrintASCII(const uint8_t *Data, size_t Size, const char *PrintAfter) {$/;"	f	namespace:fuzzer
+PrintASCIIByte	FuzzerUtil.cpp	/^void PrintASCIIByte(uint8_t Byte) {$/;"	f	namespace:fuzzer
+PrintCorpus	FuzzerCorpus.h	/^  void PrintCorpus() {$/;"	f	class:fuzzer::InputCorpus
+PrintCorpusStats	FuzzerOptions.h	/^  bool PrintCorpusStats = false;$/;"	m	struct:fuzzer::FuzzingOptions
+PrintCoverage	FuzzerOptions.h	/^  bool PrintCoverage = false;$/;"	m	struct:fuzzer::FuzzingOptions
+PrintCoverage	FuzzerTracePC.cpp	/^void TracePC::PrintCoverage() {$/;"	f	class:fuzzer::TracePC
+PrintFeatureSet	FuzzerCorpus.h	/^  void PrintFeatureSet() {$/;"	f	class:fuzzer::InputCorpus
+PrintFeatureSet	FuzzerCorpus.h	/^  void PrintFeatureSet(const std::vector<uint32_t> &FeatureSet) {$/;"	f	class:fuzzer::InputCorpus
+PrintFinalStats	FuzzerLoop.cpp	/^void Fuzzer::PrintFinalStats() {$/;"	f	class:fuzzer::Fuzzer
+PrintFinalStats	FuzzerOptions.h	/^  bool PrintFinalStats = false;$/;"	m	struct:fuzzer::FuzzingOptions
+PrintHelp	FuzzerDriver.cpp	/^static void PrintHelp() {$/;"	f	namespace:fuzzer
+PrintHexArray	FuzzerUtil.cpp	/^void PrintHexArray(const uint8_t *Data, size_t Size,$/;"	f	namespace:fuzzer
+PrintModuleInfo	FuzzerTracePC.cpp	/^void TracePC::PrintModuleInfo() {$/;"	f	class:fuzzer::TracePC
+PrintMutationSequence	FuzzerMutate.cpp	/^void MutationDispatcher::PrintMutationSequence() {$/;"	f	class:fuzzer::MutationDispatcher
+PrintNEW	FuzzerOptions.h	/^  bool PrintNEW = true; \/\/ Print a status line when new units are found;$/;"	m	struct:fuzzer::FuzzingOptions
+PrintNewCovPcs	FuzzerOptions.h	/^  bool PrintNewCovPcs = false;$/;"	m	struct:fuzzer::FuzzingOptions
+PrintNewPCs	FuzzerTracePC.cpp	/^void TracePC::PrintNewPCs() {$/;"	f	class:fuzzer::TracePC
+PrintOnce	test/SimpleCmpTest.cpp	/^bool PrintOnce(int Line) {$/;"	f
+PrintPC	FuzzerUtil.cpp	/^void PrintPC(const char *SymbolizedFMT, const char *FallbackFMT, uintptr_t PC) {$/;"	f	namespace:fuzzer
+PrintPulseAndReportSlowInput	FuzzerLoop.cpp	/^void Fuzzer::PrintPulseAndReportSlowInput(const uint8_t *Data, size_t Size) {$/;"	f	class:fuzzer::Fuzzer
+PrintRecommendedDictionary	FuzzerMutate.cpp	/^void MutationDispatcher::PrintRecommendedDictionary() {$/;"	f	class:fuzzer::MutationDispatcher
+PrintStats	FuzzerCorpus.h	/^  void PrintStats() {$/;"	f	class:fuzzer::InputCorpus
+PrintStats	FuzzerLoop.cpp	/^void Fuzzer::PrintStats(const char *Where, const char *End, size_t Units) {$/;"	f	class:fuzzer::Fuzzer
+PrintStatusForNewUnit	FuzzerLoop.cpp	/^void Fuzzer::PrintStatusForNewUnit(const Unit &U) {$/;"	f	class:fuzzer::Fuzzer
+PrintSummary	FuzzerMerge.cpp	/^void Merger::PrintSummary(std::ostream &OS) {$/;"	f	class:fuzzer::Merger
+PrintUnit	FuzzerCorpus.h	/^  void PrintUnit(const Unit &U) {$/;"	f	class:fuzzer::InputCorpus
+PrintedPCs	FuzzerTracePC.h	/^  std::set<uintptr_t> *PrintedPCs;$/;"	m	class:fuzzer::TracePC
+Printf	FuzzerIO.cpp	/^void Printf(const char *Fmt, ...) {$/;"	f	namespace:fuzzer
+ProcessStartTime	FuzzerInternal.h	/^  system_clock::time_point ProcessStartTime = system_clock::now();$/;"	m	class:fuzzer::Fuzzer
+ProgName	FuzzerDriver.cpp	/^static std::string *ProgName;$/;"	m	namespace:fuzzer	file:
+Ptr	test/TraceMallocTest.cpp	/^int *Ptr;$/;"	v
+PulseThread	FuzzerDriver.cpp	/^static void PulseThread() {$/;"	f	namespace:fuzzer
+Rand	FuzzerMutate.h	/^  Random &Rand;$/;"	m	class:fuzzer::MutationDispatcher
+Rand	FuzzerRandom.h	/^  size_t Rand() { return this->operator()(); }$/;"	f	class:fuzzer::Random
+RandBool	FuzzerRandom.h	/^  size_t RandBool() { return Rand() % 2; }$/;"	f	class:fuzzer::Random
+RandCh	FuzzerMutate.cpp	/^static char RandCh(Random &Rand) {$/;"	f	namespace:fuzzer
+Random	FuzzerRandom.h	/^  Random(unsigned int seed) : std::mt19937(seed) {}$/;"	f	class:fuzzer::Random
+Random	FuzzerRandom.h	/^class Random : public std::mt19937 {$/;"	c	namespace:fuzzer
+RawPrint	FuzzerIOPosix.cpp	/^void RawPrint(const char *Str) {$/;"	f	namespace:fuzzer
+RawPrint	FuzzerIOWindows.cpp	/^void RawPrint(const char *Str) {$/;"	f	namespace:fuzzer
+ReadByteArraySize	FuzzerShmem.h	/^  size_t ReadByteArraySize() {$/;"	f	class:fuzzer::SharedMemoryRegion
+ReadDirToVectorOfUnits	FuzzerIO.cpp	/^void ReadDirToVectorOfUnits(const char *Path, std::vector<Unit> *V,$/;"	f	namespace:fuzzer
+RecordSuccessfulMutationSequence	FuzzerMutate.cpp	/^void MutationDispatcher::RecordSuccessfulMutationSequence() {$/;"	f	class:fuzzer::MutationDispatcher
+ReduceInputs	FuzzerOptions.h	/^  bool ReduceInputs = false;$/;"	m	struct:fuzzer::FuzzingOptions
+ReloadIntervalSec	FuzzerOptions.h	/^  int ReloadIntervalSec = 1;$/;"	m	struct:fuzzer::FuzzingOptions
+RemoveFile	FuzzerIOPosix.cpp	/^void RemoveFile(const std::string &Path) {$/;"	f	namespace:fuzzer
+RemoveFile	FuzzerIOWindows.cpp	/^void RemoveFile(const std::string &Path) {$/;"	f	namespace:fuzzer
+Replace	FuzzerCorpus.h	/^  void Replace(InputInfo *II, const Unit &U) {$/;"	f	class:fuzzer::InputCorpus
+ReportNewCoverage	FuzzerLoop.cpp	/^void Fuzzer::ReportNewCoverage(InputInfo *II, const Unit &U) {$/;"	f	class:fuzzer::Fuzzer
+ReportSlowUnits	FuzzerOptions.h	/^  int ReportSlowUnits = 10;$/;"	m	struct:fuzzer::FuzzingOptions
+RereadOutputCorpus	FuzzerLoop.cpp	/^void Fuzzer::RereadOutputCorpus(size_t MaxSize) {$/;"	f	class:fuzzer::Fuzzer
+Reset	FuzzerValueBitMap.h	/^  void Reset() { memset(Map, 0, sizeof(Map)); }$/;"	f	struct:fuzzer::ValueBitMap
+ResetFeatureSet	FuzzerCorpus.h	/^  void ResetFeatureSet() {$/;"	f	class:fuzzer::InputCorpus
+ResetMaps	FuzzerTracePC.h	/^  void ResetMaps() {$/;"	f	class:fuzzer::TracePC
+RssLimitCallback	FuzzerLoop.cpp	/^void Fuzzer::RssLimitCallback() {$/;"	f	class:fuzzer::Fuzzer
+RssLimitMb	FuzzerOptions.h	/^  int RssLimitMb = 0;$/;"	m	struct:fuzzer::FuzzingOptions
+RssThread	FuzzerDriver.cpp	/^static void RssThread(Fuzzer *F, size_t RssLimitMb) {$/;"	f	namespace:fuzzer
+RunInMultipleProcesses	FuzzerDriver.cpp	/^static int RunInMultipleProcesses(const std::vector<std::string> &Args,$/;"	f	namespace:fuzzer
+RunOne	FuzzerLoop.cpp	/^bool Fuzzer::RunOne(const uint8_t *Data, size_t Size, bool MayDeleteFile,$/;"	f	class:fuzzer::Fuzzer
+RunOneTest	FuzzerDriver.cpp	/^int RunOneTest(Fuzzer *F, const char *InputFilePath, size_t MaxLen) {$/;"	f	namespace:fuzzer
+RunningCB	FuzzerInternal.h	/^  bool RunningCB = false;$/;"	m	class:fuzzer::Fuzzer
+SHA1_K0	FuzzerSHA1.cpp	80;"	d	file:
+SHA1_K20	FuzzerSHA1.cpp	81;"	d	file:
+SHA1_K40	FuzzerSHA1.cpp	82;"	d	file:
+SHA1_K60	FuzzerSHA1.cpp	83;"	d	file:
+SHA_BIG_ENDIAN	FuzzerSHA1.cpp	34;"	d	file:
+SMR	FuzzerLoop.cpp	/^SharedMemoryRegion SMR;$/;"	m	namespace:fuzzer	file:
+SaveArtifacts	FuzzerOptions.h	/^  bool SaveArtifacts = true;$/;"	m	struct:fuzzer::FuzzingOptions
+ScopedDoingMyOwnMemOrStr	FuzzerDefs.h	/^  ScopedDoingMyOwnMemOrStr() { DoingMyOwnMemOrStr++; }$/;"	f	struct:fuzzer::ScopedDoingMyOwnMemOrStr
+ScopedDoingMyOwnMemOrStr	FuzzerDefs.h	/^struct ScopedDoingMyOwnMemOrStr {$/;"	s	namespace:fuzzer
+SearchMemory	FuzzerUtilPosix.cpp	/^const void *SearchMemory(const void *Data, size_t DataLen, const void *Patt,$/;"	f	namespace:fuzzer
+SearchMemory	FuzzerUtilWindows.cpp	/^const void *SearchMemory(const void *Data, size_t DataLen, const void *Patt,$/;"	f	namespace:fuzzer
+SearchRegexCmd	FuzzerUtilPosix.cpp	/^std::string SearchRegexCmd(const std::string &Regex) {$/;"	f	namespace:fuzzer
+SearchRegexCmd	FuzzerUtilWindows.cpp	/^std::string SearchRegexCmd(const std::string &Regex) {$/;"	f	namespace:fuzzer
+SeedLargeBuffer	test/BufferOverflowOnInput.cpp	/^static volatile bool SeedLargeBuffer;$/;"	v	file:
+SemName	FuzzerShmemPosix.cpp	/^std::string SharedMemoryRegion::SemName(const char *Name, int Idx) {$/;"	f	class:fuzzer::SharedMemoryRegion
+SemName	FuzzerShmemWindows.cpp	/^std::string SharedMemoryRegion::SemName(const char *Name, int Idx) {$/;"	f	class:fuzzer::SharedMemoryRegion
+Semaphore	FuzzerShmem.h	/^  void *Semaphore[2];$/;"	m	class:fuzzer::SharedMemoryRegion
+Separator	test/CustomCrossOverTest.cpp	/^static const char *Separator = "-_^_-";$/;"	v	file:
+Set	FuzzerDictionary.h	/^  void Set(const uint8_t *B, uint8_t S) {$/;"	f	class:fuzzer::FixedWord
+SetCorpus	FuzzerMutate.h	/^  void SetCorpus(const InputCorpus *Corpus) { this->Corpus = Corpus; }$/;"	f	class:fuzzer::MutationDispatcher
+SetMaxInputLen	FuzzerLoop.cpp	/^void Fuzzer::SetMaxInputLen(size_t MaxInputLen) {$/;"	f	class:fuzzer::Fuzzer
+SetMaxMutationLen	FuzzerLoop.cpp	/^void Fuzzer::SetMaxMutationLen(size_t MaxMutationLen) {$/;"	f	class:fuzzer::Fuzzer
+SetPrintNewPCs	FuzzerTracePC.h	/^  void SetPrintNewPCs(bool P) { DoPrintNewPCs = P; }$/;"	f	class:fuzzer::TracePC
+SetSigaction	FuzzerUtilPosix.cpp	/^static void SetSigaction(int signum,$/;"	f	namespace:fuzzer
+SetSigaction	afl/afl_driver.cpp	/^static void SetSigaction(int signum,$/;"	f	file:
+SetSignalHandler	FuzzerUtilPosix.cpp	/^void SetSignalHandler(const FuzzingOptions& Options) {$/;"	f	namespace:fuzzer
+SetSignalHandler	FuzzerUtilWindows.cpp	/^void SetSignalHandler(const FuzzingOptions& Options) {$/;"	f	namespace:fuzzer
+SetTimer	FuzzerUtilPosix.cpp	/^void SetTimer(int Seconds) {$/;"	f	namespace:fuzzer
+SetTimer	FuzzerUtilWindows.cpp	/^  void SetTimer(int Seconds) {$/;"	f	class:fuzzer::TimerQ
+SetUseCounters	FuzzerTracePC.h	/^  void SetUseCounters(bool UC) { UseCounters = UC; }$/;"	f	class:fuzzer::TracePC
+SetUseValueProfile	FuzzerTracePC.h	/^  void SetUseValueProfile(bool VP) { UseValueProfile = VP; }$/;"	f	class:fuzzer::TracePC
+Sha1	FuzzerCorpus.h	/^  uint8_t Sha1[kSHA1NumBytes];  \/\/ Checksum.$/;"	m	struct:fuzzer::InputInfo
+Sha1ToString	FuzzerSHA1.cpp	/^std::string Sha1ToString(const uint8_t Sha1[kSHA1NumBytes]) {$/;"	f	namespace:fuzzer
+SharedMemoryRegion	FuzzerShmem.h	/^class SharedMemoryRegion {$/;"	c	namespace:fuzzer
+ShortSwitch	test/SwitchTest.cpp	/^bool ShortSwitch(const uint8_t *Data, size_t Size) {$/;"	f
+Shrink	FuzzerOptions.h	/^  bool Shrink = false;$/;"	m	struct:fuzzer::FuzzingOptions
+ShuffleAndMinimize	FuzzerLoop.cpp	/^void Fuzzer::ShuffleAndMinimize(UnitVector *InitialCorpus) {$/;"	f	class:fuzzer::Fuzzer
+ShuffleAtStartUp	FuzzerOptions.h	/^  bool ShuffleAtStartUp = true;$/;"	m	struct:fuzzer::FuzzingOptions
+ShuffleCorpus	FuzzerLoop.cpp	/^void Fuzzer::ShuffleCorpus(UnitVector *V) {$/;"	f	class:fuzzer::Fuzzer
+SignalMutex	FuzzerUtilDarwin.cpp	/^static std::mutex SignalMutex;$/;"	m	namespace:fuzzer	file:
+SimpleFastHash	FuzzerUtil.cpp	/^size_t SimpleFastHash(const uint8_t *Data, size_t Size) {$/;"	f	namespace:fuzzer
+Sink	test/BadStrcmpTest.cpp	/^static volatile int Sink;$/;"	v	file:
+Sink	test/CustomMutatorTest.cpp	/^static volatile int Sink;$/;"	v	file:
+Sink	test/CxxStringEqTest.cpp	/^static volatile int Sink;$/;"	v	file:
+Sink	test/DivTest.cpp	/^static volatile int Sink;$/;"	v	file:
+Sink	test/LeakTest.cpp	/^static volatile void *Sink;$/;"	v	file:
+Sink	test/LeakTimeoutTest.cpp	/^static volatile int *Sink;$/;"	v	file:
+Sink	test/LoadTest.cpp	/^static volatile int Sink;$/;"	v	file:
+Sink	test/NullDerefTest.cpp	/^static volatile int Sink;$/;"	v	file:
+Sink	test/ShrinkControlFlowSimpleTest.cpp	/^static volatile int Sink;$/;"	v	file:
+Sink	test/ShrinkControlFlowTest.cpp	/^static volatile int Sink;$/;"	v	file:
+Sink	test/ShrinkValueProfileTest.cpp	/^static volatile uint32_t Sink;$/;"	v	file:
+Sink	test/SignedIntOverflowTest.cpp	/^static volatile int Sink;$/;"	v	file:
+Sink	test/SimpleTest.cpp	/^static volatile int Sink;$/;"	v	file:
+Sink	test/StrncmpOOBTest.cpp	/^static volatile int Sink;$/;"	v	file:
+Sink	test/SwitchTest.cpp	/^static volatile int Sink;$/;"	v	file:
+Sink	test/ThreadedLeakTest.cpp	/^static volatile int *Sink;$/;"	v	file:
+Sink	test/TimeoutTest.cpp	/^static volatile int Sink;$/;"	v	file:
+SinkPtr	test/OneHugeAllocTest.cpp	/^static volatile char *SinkPtr;$/;"	v	file:
+SinkPtr	test/OutOfMemorySingleLargeMallocTest.cpp	/^static volatile char *SinkPtr;$/;"	v	file:
+SinkPtr	test/OutOfMemoryTest.cpp	/^static volatile char *SinkPtr;$/;"	v	file:
+Size	FuzzerDictionary.h	/^  size_t Size = 0;$/;"	m	class:fuzzer::Dictionary
+Size	FuzzerDictionary.h	/^  uint8_t Size = 0;$/;"	m	class:fuzzer::FixedWord
+Size	FuzzerMerge.h	/^  size_t Size = 0;$/;"	m	struct:fuzzer::MergeFileInfo
+SizeInBytes	FuzzerCorpus.h	/^  size_t SizeInBytes() const {$/;"	f	class:fuzzer::InputCorpus
+SleepSeconds	FuzzerUtilPosix.cpp	/^void SleepSeconds(int Seconds) {$/;"	f	namespace:fuzzer
+SleepSeconds	FuzzerUtilWindows.cpp	/^void SleepSeconds(int Seconds) { Sleep(Seconds * 1000); }$/;"	f	namespace:fuzzer
+SmallestElementPerFeature	FuzzerCorpus.h	/^  uint32_t SmallestElementPerFeature[kFeatureSetSize];$/;"	m	class:fuzzer::InputCorpus
+SplitBefore	FuzzerUtil.h	/^inline std::pair<std::string, std::string> SplitBefore(std::string X,$/;"	f	namespace:fuzzer
+Start	FuzzerLoop.cpp	/^  void Start(int TraceLevel) {$/;"	f	struct:fuzzer::MallocFreeTracer
+Start	FuzzerTracePC.h	/^    uint32_t *Start, *Stop;$/;"	m	struct:fuzzer::TracePC::Module
+Start	FuzzerTracePC.h	/^  struct { uint8_t *Start, *Stop; } ModuleCounters[4096];$/;"	m	struct:fuzzer::TracePC::__anon3
+StartMutationSequence	FuzzerMutate.cpp	/^void MutationDispatcher::StartMutationSequence() {$/;"	f	class:fuzzer::MutationDispatcher
+StartRssThread	FuzzerDriver.cpp	/^static void StartRssThread(Fuzzer *F, size_t RssLimitMb) {$/;"	f	namespace:fuzzer
+StaticAlarmCallback	FuzzerLoop.cpp	/^void Fuzzer::StaticAlarmCallback() {$/;"	f	class:fuzzer::Fuzzer
+StaticCrashSignalCallback	FuzzerLoop.cpp	/^void Fuzzer::StaticCrashSignalCallback() {$/;"	f	class:fuzzer::Fuzzer
+StaticDeathCallback	FuzzerLoop.cpp	/^void Fuzzer::StaticDeathCallback() {$/;"	f	class:fuzzer::Fuzzer
+StaticFileSizeExceedCallback	FuzzerLoop.cpp	/^void Fuzzer::StaticFileSizeExceedCallback() {$/;"	f	class:fuzzer::Fuzzer
+StaticInterruptCallback	FuzzerLoop.cpp	/^void Fuzzer::StaticInterruptCallback() {$/;"	f	class:fuzzer::Fuzzer
+Stop	FuzzerLoop.cpp	/^  bool Stop() {$/;"	f	struct:fuzzer::MallocFreeTracer
+Stop	FuzzerTracePC.h	/^    uint32_t *Start, *Stop;$/;"	m	struct:fuzzer::TracePC::Module
+Stop	FuzzerTracePC.h	/^  struct { uint8_t *Start, *Stop; } ModuleCounters[4096];$/;"	m	struct:fuzzer::TracePC::__anon3
+StrFlag	FuzzerDriver.cpp	/^  const char **StrFlag;$/;"	m	struct:fuzzer::FlagDescription	file:
+SuccessCount	FuzzerDictionary.h	/^  size_t SuccessCount = 0;$/;"	m	class:fuzzer::DictionaryEntry
+Switch	test/Switch2Test.cpp	/^int Switch(int a) {$/;"	f
+Switch	test/SwitchTest.cpp	/^bool Switch(const uint8_t *Data, size_t Size) {$/;"	f
+TEST	test/FuzzerUnittest.cpp	/^TEST(Corpus, Distribution) {$/;"	f
+TEST	test/FuzzerUnittest.cpp	/^TEST(Fuzzer, CrossOver) {$/;"	f
+TEST	test/FuzzerUnittest.cpp	/^TEST(Fuzzer, ForEachNonZeroByte) {$/;"	f
+TEST	test/FuzzerUnittest.cpp	/^TEST(Fuzzer, Hash) {$/;"	f
+TEST	test/FuzzerUnittest.cpp	/^TEST(FuzzerDictionary, ParseDictionaryFile) {$/;"	f
+TEST	test/FuzzerUnittest.cpp	/^TEST(FuzzerDictionary, ParseOneDictionaryEntry) {$/;"	f
+TEST	test/FuzzerUnittest.cpp	/^TEST(FuzzerMutate, AddWordFromDictionary1) {$/;"	f
+TEST	test/FuzzerUnittest.cpp	/^TEST(FuzzerMutate, AddWordFromDictionary2) {$/;"	f
+TEST	test/FuzzerUnittest.cpp	/^TEST(FuzzerMutate, ChangeASCIIInteger1) {$/;"	f
+TEST	test/FuzzerUnittest.cpp	/^TEST(FuzzerMutate, ChangeASCIIInteger2) {$/;"	f
+TEST	test/FuzzerUnittest.cpp	/^TEST(FuzzerMutate, ChangeBinaryInteger1) {$/;"	f
+TEST	test/FuzzerUnittest.cpp	/^TEST(FuzzerMutate, ChangeBinaryInteger2) {$/;"	f
+TEST	test/FuzzerUnittest.cpp	/^TEST(FuzzerMutate, ChangeBit1) {$/;"	f
+TEST	test/FuzzerUnittest.cpp	/^TEST(FuzzerMutate, ChangeBit2) {$/;"	f
+TEST	test/FuzzerUnittest.cpp	/^TEST(FuzzerMutate, ChangeByte1) {$/;"	f
+TEST	test/FuzzerUnittest.cpp	/^TEST(FuzzerMutate, ChangeByte2) {$/;"	f
+TEST	test/FuzzerUnittest.cpp	/^TEST(FuzzerMutate, CopyPart1) {$/;"	f
+TEST	test/FuzzerUnittest.cpp	/^TEST(FuzzerMutate, CopyPart2) {$/;"	f
+TEST	test/FuzzerUnittest.cpp	/^TEST(FuzzerMutate, EraseBytes1) {$/;"	f
+TEST	test/FuzzerUnittest.cpp	/^TEST(FuzzerMutate, EraseBytes2) {$/;"	f
+TEST	test/FuzzerUnittest.cpp	/^TEST(FuzzerMutate, InsertByte1) {$/;"	f
+TEST	test/FuzzerUnittest.cpp	/^TEST(FuzzerMutate, InsertByte2) {$/;"	f
+TEST	test/FuzzerUnittest.cpp	/^TEST(FuzzerMutate, InsertRepeatedBytes1) {$/;"	f
+TEST	test/FuzzerUnittest.cpp	/^TEST(FuzzerMutate, InsertRepeatedBytes2) {$/;"	f
+TEST	test/FuzzerUnittest.cpp	/^TEST(FuzzerMutate, ShuffleBytes1) {$/;"	f
+TEST	test/FuzzerUnittest.cpp	/^TEST(FuzzerMutate, ShuffleBytes2) {$/;"	f
+TEST	test/FuzzerUnittest.cpp	/^TEST(FuzzerUtil, Base64) {$/;"	f
+TEST	test/FuzzerUnittest.cpp	/^TEST(Merge, Bad) {$/;"	f
+TEST	test/FuzzerUnittest.cpp	/^TEST(Merge, Good) {$/;"	f
+TEST	test/FuzzerUnittest.cpp	/^TEST(Merge, Merge) {$/;"	f
+TORC4	FuzzerTracePC.h	/^  TableOfRecentCompares<uint32_t, 32> TORC4;$/;"	m	class:fuzzer::TracePC
+TORC8	FuzzerTracePC.h	/^  TableOfRecentCompares<uint64_t, 32> TORC8;$/;"	m	class:fuzzer::TracePC
+TORCW	FuzzerTracePC.h	/^  TableOfRecentCompares<Word, 32> TORCW;$/;"	m	class:fuzzer::TracePC
+TPC	FuzzerTracePC.cpp	/^TracePC TPC;$/;"	m	namespace:fuzzer	file:
+Table	FuzzerTracePC.h	/^  Pair Table[kSize];$/;"	m	struct:fuzzer::TableOfRecentCompares
+TableOfRecentCompares	FuzzerTracePC.h	/^struct TableOfRecentCompares {$/;"	s	namespace:fuzzer
+Target	test/CustomCrossOverTest.cpp	/^static const char *Target = "012-_^_-abc";$/;"	v	file:
+TempAutoDictionary	FuzzerMutate.h	/^  Dictionary TempAutoDictionary;$/;"	m	class:fuzzer::MutationDispatcher
+TestAddWordFromDictionary	test/FuzzerUnittest.cpp	/^void TestAddWordFromDictionary(Mutator M, int NumIter) {$/;"	f
+TestChangeASCIIInteger	test/FuzzerUnittest.cpp	/^void TestChangeASCIIInteger(Mutator M, int NumIter) {$/;"	f
+TestChangeBinaryInteger	test/FuzzerUnittest.cpp	/^void TestChangeBinaryInteger(Mutator M, int NumIter) {$/;"	f
+TestChangeBit	test/FuzzerUnittest.cpp	/^void TestChangeBit(Mutator M, int NumIter) {$/;"	f
+TestChangeByte	test/FuzzerUnittest.cpp	/^void TestChangeByte(Mutator M, int NumIter) {$/;"	f
+TestCopyPart	test/FuzzerUnittest.cpp	/^void TestCopyPart(Mutator M, int NumIter) {$/;"	f
+TestEraseBytes	test/FuzzerUnittest.cpp	/^void TestEraseBytes(Mutator M, int NumIter) {$/;"	f
+TestInsertByte	test/FuzzerUnittest.cpp	/^void TestInsertByte(Mutator M, int NumIter) {$/;"	f
+TestInsertRepeatedBytes	test/FuzzerUnittest.cpp	/^void TestInsertRepeatedBytes(Mutator M, int NumIter) {$/;"	f
+TestShuffleBytes	test/FuzzerUnittest.cpp	/^void TestShuffleBytes(Mutator M, int NumIter) {$/;"	f
+TimeOfLongestUnitInSeconds	FuzzerInternal.h	/^  long TimeOfLongestUnitInSeconds = 0;$/;"	m	class:fuzzer::Fuzzer
+TimedOut	FuzzerInternal.h	/^  bool TimedOut() {$/;"	f	class:fuzzer::Fuzzer
+TimeoutExitCode	FuzzerOptions.h	/^  int TimeoutExitCode = 77;$/;"	m	struct:fuzzer::FuzzingOptions
+Timer	FuzzerUtilWindows.cpp	/^static TimerQ Timer;$/;"	m	namespace:fuzzer	file:
+TimerQ	FuzzerUtilWindows.cpp	/^  TimerQ() : TimerQueue(NULL) {};$/;"	f	class:fuzzer::TimerQ
+TimerQ	FuzzerUtilWindows.cpp	/^class TimerQ {$/;"	c	namespace:fuzzer	file:
+TimerQueue	FuzzerUtilWindows.cpp	/^  HANDLE TimerQueue;$/;"	m	class:fuzzer::TimerQ	file:
+Tmp	FuzzerCorpus.h	/^  size_t Tmp = 0; \/\/ Used by ValidateFeatureSet.$/;"	m	struct:fuzzer::InputInfo
+TmpDir	FuzzerIOPosix.cpp	/^std::string TmpDir() {$/;"	f	namespace:fuzzer
+TmpDir	FuzzerIOWindows.cpp	/^std::string TmpDir() {$/;"	f	namespace:fuzzer
+ToASCII	FuzzerUtil.cpp	/^bool ToASCII(uint8_t *Data, size_t Size) {$/;"	f	namespace:fuzzer
+TotalNumberOfRuns	FuzzerInternal.h	/^  size_t TotalNumberOfRuns = 0;$/;"	m	class:fuzzer::Fuzzer
+TraceLevel	FuzzerLoop.cpp	/^  int TraceLevel = 0;$/;"	m	struct:fuzzer::MallocFreeTracer	file:
+TraceMalloc	FuzzerOptions.h	/^  int  TraceMalloc = 0;$/;"	m	struct:fuzzer::FuzzingOptions
+TracePC	FuzzerTracePC.h	/^class TracePC {$/;"	c	namespace:fuzzer
+TryDetectingAMemoryLeak	FuzzerLoop.cpp	/^void Fuzzer::TryDetectingAMemoryLeak(const uint8_t *Data, size_t Size,$/;"	f	class:fuzzer::Fuzzer
+TryToReplace	FuzzerCorpus.h	/^  bool TryToReplace(InputInfo *II, const uint8_t *Data, size_t Size,$/;"	f	class:fuzzer::InputCorpus
+U	FuzzerCorpus.h	/^  Unit U;  \/\/ The actual input data.$/;"	m	struct:fuzzer::InputInfo
+UC	FuzzerTracePC.h	/^  UserCallbacks *UC;$/;"	m	class:fuzzer::TracePC
+UIntFlag	FuzzerDriver.cpp	/^  unsigned int *UIntFlag;$/;"	m	struct:fuzzer::FlagDescription	file:
+Uncovered1	test/DSO1.cpp	/^void Uncovered1() { }$/;"	f
+Uncovered2	test/DSO2.cpp	/^void Uncovered2() {}$/;"	f
+Unit	FuzzerDefs.h	/^typedef std::vector<uint8_t> Unit;$/;"	t	namespace:fuzzer
+UnitHadOutputDiff	FuzzerInternal.h	/^  static thread_local bool UnitHadOutputDiff;$/;"	m	class:fuzzer::Fuzzer
+UnitHadOutputDiff	FuzzerLoop.cpp	/^thread_local bool Fuzzer::UnitHadOutputDiff;$/;"	m	class:fuzzer::Fuzzer	file:
+UnitStartTime	FuzzerInternal.h	/^  system_clock::time_point UnitStartTime, UnitStopTime;$/;"	m	class:fuzzer::Fuzzer
+UnitStopTime	FuzzerInternal.h	/^  system_clock::time_point UnitStartTime, UnitStopTime;$/;"	m	class:fuzzer::Fuzzer
+UnitTimeoutSec	FuzzerOptions.h	/^  int UnitTimeoutSec = 300;$/;"	m	struct:fuzzer::FuzzingOptions
+UnitVector	FuzzerDefs.h	/^typedef std::vector<Unit> UnitVector;$/;"	t	namespace:fuzzer
+UpdateCorpusDistribution	FuzzerCorpus.h	/^  void UpdateCorpusDistribution() {$/;"	f	class:fuzzer::InputCorpus
+UseCmp	FuzzerOptions.h	/^  bool UseCmp = false;$/;"	m	struct:fuzzer::FuzzingOptions
+UseCount	FuzzerDictionary.h	/^  size_t UseCount = 0;$/;"	m	class:fuzzer::DictionaryEntry
+UseCounters	FuzzerOptions.h	/^  bool UseCounters = false;$/;"	m	struct:fuzzer::FuzzingOptions
+UseCounters	FuzzerTracePC.h	/^  bool UseCounters = false;$/;"	m	class:fuzzer::TracePC
+UseIndirCalls	FuzzerOptions.h	/^  bool UseIndirCalls = true;$/;"	m	struct:fuzzer::FuzzingOptions
+UseMemmem	FuzzerOptions.h	/^  bool UseMemmem = true;$/;"	m	struct:fuzzer::FuzzingOptions
+UseValueProfile	FuzzerOptions.h	/^  bool UseValueProfile = false;$/;"	m	struct:fuzzer::FuzzingOptions
+UseValueProfile	FuzzerTracePC.h	/^  bool UseValueProfile = false;$/;"	m	class:fuzzer::TracePC
+UserCallback	FuzzerDefs.h	/^typedef int (*UserCallback)(const uint8_t *Data, size_t Size);$/;"	t	namespace:fuzzer
+UserCallback	FuzzerExtFunctions.h	/^typedef int (*UserCallback)(const uint8_t *Data, size_t Size);$/;"	t
+UserCallbacks	FuzzerExtFunctions.h	/^struct UserCallbacks {$/;"	s
+ValidateFeatureSet	FuzzerCorpus.h	/^  void ValidateFeatureSet() {$/;"	f	class:fuzzer::InputCorpus
+ValueBitMap	FuzzerValueBitMap.h	/^struct ValueBitMap {$/;"	s	namespace:fuzzer
+ValueProfileMap	FuzzerTracePC.h	/^  ValueBitMap ValueProfileMap;$/;"	m	class:fuzzer::TracePC
+VectorIntHash	FuzzerTracePC.h	/^struct VectorIntHash {$/;"	s	namespace:fuzzer
+Verbosity	FuzzerOptions.h	/^  int Verbosity = 1;$/;"	m	struct:fuzzer::FuzzingOptions
+W	FuzzerDictionary.h	/^  Word W;$/;"	m	class:fuzzer::DictionaryEntry
+Wait	FuzzerShmemPosix.cpp	/^void SharedMemoryRegion::Wait(int Idx) {$/;"	f	class:fuzzer::SharedMemoryRegion
+Wait	FuzzerShmemWindows.cpp	/^void SharedMemoryRegion::Wait(int Idx) {$/;"	f	class:fuzzer::SharedMemoryRegion
+WaitClient	FuzzerShmem.h	/^  void WaitClient() {Wait(1);}$/;"	f	class:fuzzer::SharedMemoryRegion
+WaitServer	FuzzerShmem.h	/^  void WaitServer() {Wait(0);}$/;"	f	class:fuzzer::SharedMemoryRegion
+Weights	FuzzerCorpus.h	/^  std::vector<double> Weights;$/;"	m	class:fuzzer::InputCorpus
+Word	FuzzerDictionary.h	/^typedef FixedWord<64> Word;$/;"	t	namespace:fuzzer
+WorkerThread	FuzzerDriver.cpp	/^static void WorkerThread(const std::string &Cmd, std::atomic<unsigned> *Counter,$/;"	f	namespace:fuzzer
+WriteByteArray	FuzzerShmem.h	/^  size_t WriteByteArray(const uint8_t *Bytes, size_t N) {$/;"	f	class:fuzzer::SharedMemoryRegion
+WriteToFile	FuzzerIO.cpp	/^void WriteToFile(const Unit &U, const std::string &Path) {$/;"	f	namespace:fuzzer
+WriteToOutputCorpus	FuzzerLoop.cpp	/^void Fuzzer::WriteToOutputCorpus(const Unit &U) {$/;"	f	class:fuzzer::Fuzzer
+WriteUnitToFileWithPrefix	FuzzerLoop.cpp	/^void Fuzzer::WriteUnitToFileWithPrefix(const Unit &U, const char *Prefix) {$/;"	f	class:fuzzer::Fuzzer
+Zero	test/SimpleDictionaryTest.cpp	/^static volatile int Zero = 0;$/;"	v	file:
+_LIBCPP_HAS_NO_ASAN	test/FuzzerUnittest.cpp	6;"	d	file:
+__afl_manual_init	test/AFLDriverTest.cpp	/^extern "C" void __afl_manual_init() {}$/;"	f
+__afl_persistent_loop	test/AFLDriverTest.cpp	/^extern "C" int __afl_persistent_loop(unsigned int N) {$/;"	f
+__has_attribute	FuzzerDefs.h	40;"	d
+__libfuzzer_is_present	FuzzerDriver.cpp	/^extern "C" __attribute__((used)) void __libfuzzer_is_present() {}$/;"	f
+__sancov_trace_pc_guard_8bit_counters	FuzzerTracePC.cpp	/^uint8_t __sancov_trace_pc_guard_8bit_counters[fuzzer::TracePC::kNumPCs];$/;"	v
+__sancov_trace_pc_pcs	FuzzerTracePC.cpp	/^uintptr_t __sancov_trace_pc_pcs[fuzzer::TracePC::kNumPCs];$/;"	v
+__sanitizer_cov_8bit_counters_init	FuzzerTracePC.cpp	/^void __sanitizer_cov_8bit_counters_init(uint8_t *Start, uint8_t *Stop) {$/;"	f
+__sanitizer_cov_trace_cmp1	FuzzerTracePC.cpp	/^void __sanitizer_cov_trace_cmp1(uint8_t Arg1, uint8_t Arg2) {$/;"	f
+__sanitizer_cov_trace_cmp2	FuzzerTracePC.cpp	/^void __sanitizer_cov_trace_cmp2(uint16_t Arg1, uint16_t Arg2) {$/;"	f
+__sanitizer_cov_trace_cmp4	FuzzerTracePC.cpp	/^void __sanitizer_cov_trace_cmp4(uint32_t Arg1, uint32_t Arg2) {$/;"	f
+__sanitizer_cov_trace_cmp8	FuzzerTracePC.cpp	/^void __sanitizer_cov_trace_cmp8(uint64_t Arg1, uint64_t Arg2) {$/;"	f
+__sanitizer_cov_trace_div4	FuzzerTracePC.cpp	/^void __sanitizer_cov_trace_div4(uint32_t Val) {$/;"	f
+__sanitizer_cov_trace_div8	FuzzerTracePC.cpp	/^void __sanitizer_cov_trace_div8(uint64_t Val) {$/;"	f
+__sanitizer_cov_trace_gep	FuzzerTracePC.cpp	/^void __sanitizer_cov_trace_gep(uintptr_t Idx) {$/;"	f
+__sanitizer_cov_trace_pc	FuzzerTracePC.cpp	/^void __sanitizer_cov_trace_pc() {$/;"	f
+__sanitizer_cov_trace_pc_guard	FuzzerTracePC.cpp	/^void __sanitizer_cov_trace_pc_guard(uint32_t *Guard) {$/;"	f
+__sanitizer_cov_trace_pc_guard_init	FuzzerTracePC.cpp	/^void __sanitizer_cov_trace_pc_guard_init(uint32_t *Start, uint32_t *Stop) {$/;"	f
+__sanitizer_cov_trace_pc_indir	FuzzerTracePC.cpp	/^void __sanitizer_cov_trace_pc_indir(uintptr_t Callee) {$/;"	f
+__sanitizer_cov_trace_switch	FuzzerTracePC.cpp	/^void __sanitizer_cov_trace_switch(uint64_t Val, uint64_t *Cases) {$/;"	f
+__sanitizer_weak_hook_memcmp	FuzzerTracePC.cpp	/^void __sanitizer_weak_hook_memcmp(void *caller_pc, const void *s1,$/;"	f
+__sanitizer_weak_hook_memmem	FuzzerTracePC.cpp	/^void __sanitizer_weak_hook_memmem(void *called_pc, const void *s1, size_t len1,$/;"	f
+__sanitizer_weak_hook_strcasecmp	FuzzerTracePC.cpp	/^void __sanitizer_weak_hook_strcasecmp(void *called_pc, const char *s1,$/;"	f
+__sanitizer_weak_hook_strcasestr	FuzzerTracePC.cpp	/^void __sanitizer_weak_hook_strcasestr(void *called_pc, const char *s1,$/;"	f
+__sanitizer_weak_hook_strcmp	FuzzerTracePC.cpp	/^void __sanitizer_weak_hook_strcmp(void *caller_pc, const char *s1,$/;"	f
+__sanitizer_weak_hook_strncasecmp	FuzzerTracePC.cpp	/^void __sanitizer_weak_hook_strncasecmp(void *called_pc, const char *s1,$/;"	f
+__sanitizer_weak_hook_strncmp	FuzzerTracePC.cpp	/^void __sanitizer_weak_hook_strncmp(void *caller_pc, const char *s1,$/;"	f
+__sanitizer_weak_hook_strstr	FuzzerTracePC.cpp	/^void __sanitizer_weak_hook_strstr(void *called_pc, const char *s1,$/;"	f
+argv0	test/InitializeTest.cpp	/^static char *argv0;$/;"	v	file:
+array	test/LoadTest.cpp	/^int array[kArraySize];$/;"	v
+begin	FuzzerDictionary.h	/^  const DictionaryEntry *begin() const { return &DE[0]; }$/;"	f	class:fuzzer::Dictionary
+break_optimization	test/LargeTest.cpp	/^static inline void break_optimization(const void *arg) {$/;"	f	file:
+buffer	FuzzerSHA1.cpp	/^	uint32_t buffer[BLOCK_LENGTH\/4];$/;"	m	struct:__anon2::sha1nfo	file:
+bufferOffset	FuzzerSHA1.cpp	/^	uint8_t bufferOffset;$/;"	m	struct:__anon2::sha1nfo	file:
+byteCount	FuzzerSHA1.cpp	/^	uint32_t byteCount;$/;"	m	struct:__anon2::sha1nfo	file:
+callbacks	FuzzerExtFunctions.h	/^  UserCallback *callbacks;$/;"	m	struct:UserCallbacks
+clear	FuzzerDictionary.h	/^  void clear() { Size = 0; }$/;"	f	class:fuzzer::Dictionary
+crash_handler	afl/afl_driver.cpp	/^static void crash_handler(int, siginfo_t *, void *) {$/;"	f	file:
+data	FuzzerDictionary.h	/^  const uint8_t *data() const { return Data; }$/;"	f	class:fuzzer::FixedWord
+empty	FuzzerCorpus.h	/^  bool empty() const { return Inputs.empty(); }$/;"	f	class:fuzzer::InputCorpus
+empty	FuzzerDictionary.h	/^  bool empty() const { return Size == 0; }$/;"	f	class:fuzzer::Dictionary
+end	FuzzerDictionary.h	/^  const DictionaryEntry *end() const { return begin() + Size; }$/;"	f	class:fuzzer::Dictionary
+environ	FuzzerUtilDarwin.cpp	/^extern "C" char **environ;$/;"	v
+execPerSec	FuzzerInternal.h	/^  size_t execPerSec() {$/;"	f	class:fuzzer::Fuzzer
+extra_stats_file	afl/afl_driver.cpp	/^static FILE *extra_stats_file = NULL;$/;"	v	file:
+f00	test/CallerCalleeTest.cpp	/^void f00() {}$/;"	f
+f01	test/CallerCalleeTest.cpp	/^void f01() { t[(unsigned)'b'] = f12;}$/;"	f
+f12	test/CallerCalleeTest.cpp	/^void f12() { t[(unsigned)'c'] = f23;}$/;"	f
+f23	test/CallerCalleeTest.cpp	/^void f23() { t[(unsigned)'d'] = f34;}$/;"	f
+f34	test/CallerCalleeTest.cpp	/^void f34() {$/;"	f
+fuzzer	FuzzerCorpus.h	/^namespace fuzzer {$/;"	n
+fuzzer	FuzzerCrossOver.cpp	/^namespace fuzzer {$/;"	n	file:
+fuzzer	FuzzerDefs.h	/^namespace fuzzer {$/;"	n
+fuzzer	FuzzerDictionary.h	/^namespace fuzzer {$/;"	n
+fuzzer	FuzzerDriver.cpp	/^namespace fuzzer {$/;"	n	file:
+fuzzer	FuzzerExtFunctions.h	/^namespace fuzzer {$/;"	n
+fuzzer	FuzzerExtFunctionsDlsym.cpp	/^namespace fuzzer {$/;"	n	file:
+fuzzer	FuzzerExtFunctionsDlsymWin.cpp	/^namespace fuzzer {$/;"	n	file:
+fuzzer	FuzzerExtFunctionsWeak.cpp	/^namespace fuzzer {$/;"	n	file:
+fuzzer	FuzzerExtFunctionsWeakAlias.cpp	/^namespace fuzzer {$/;"	n	file:
+fuzzer	FuzzerExtraCounters.cpp	/^namespace fuzzer {$/;"	n	file:
+fuzzer	FuzzerIO.cpp	/^namespace fuzzer {$/;"	n	file:
+fuzzer	FuzzerIO.h	/^namespace fuzzer {$/;"	n
+fuzzer	FuzzerIOPosix.cpp	/^namespace fuzzer {$/;"	n	file:
+fuzzer	FuzzerIOWindows.cpp	/^namespace fuzzer {$/;"	n	file:
+fuzzer	FuzzerInternal.h	/^namespace fuzzer {$/;"	n
+fuzzer	FuzzerLoop.cpp	/^namespace fuzzer {$/;"	n	file:
+fuzzer	FuzzerMerge.cpp	/^namespace fuzzer {$/;"	n	file:
+fuzzer	FuzzerMerge.h	/^namespace fuzzer {$/;"	n
+fuzzer	FuzzerMutate.cpp	/^namespace fuzzer {$/;"	n	file:
+fuzzer	FuzzerMutate.h	/^namespace fuzzer {$/;"	n
+fuzzer	FuzzerOptions.h	/^namespace fuzzer {$/;"	n
+fuzzer	FuzzerRandom.h	/^namespace fuzzer {$/;"	n
+fuzzer	FuzzerSHA1.cpp	/^namespace fuzzer {$/;"	n	file:
+fuzzer	FuzzerSHA1.h	/^namespace fuzzer {$/;"	n
+fuzzer	FuzzerShmem.h	/^namespace fuzzer {$/;"	n
+fuzzer	FuzzerShmemPosix.cpp	/^namespace fuzzer {$/;"	n	file:
+fuzzer	FuzzerShmemWindows.cpp	/^namespace fuzzer {$/;"	n	file:
+fuzzer	FuzzerTracePC.cpp	/^namespace fuzzer {$/;"	n	file:
+fuzzer	FuzzerTracePC.h	/^namespace fuzzer {$/;"	n
+fuzzer	FuzzerUtil.cpp	/^namespace fuzzer {$/;"	n	file:
+fuzzer	FuzzerUtil.h	/^namespace fuzzer {$/;"	n
+fuzzer	FuzzerUtilDarwin.cpp	/^namespace fuzzer {$/;"	n	file:
+fuzzer	FuzzerUtilLinux.cpp	/^namespace fuzzer {$/;"	n	file:
+fuzzer	FuzzerUtilPosix.cpp	/^namespace fuzzer {$/;"	n	file:
+fuzzer	FuzzerUtilWindows.cpp	/^namespace fuzzer {$/;"	n	file:
+fuzzer	FuzzerValueBitMap.h	/^namespace fuzzer {$/;"	n
+getTotalNumberOfRuns	FuzzerInternal.h	/^  size_t getTotalNumberOfRuns() { return TotalNumberOfRuns; }$/;"	f	class:fuzzer::Fuzzer
+innerHash	FuzzerSHA1.cpp	/^	uint8_t innerHash[HASH_LENGTH];$/;"	m	struct:__anon2::sha1nfo	file:
+kAllocatedPointersSize	test/AccumulateAllocationsTest.cpp	/^const int kAllocatedPointersSize = 10000;$/;"	v
+kArraySize	test/LoadTest.cpp	/^const int kArraySize = 1234567;$/;"	v
+kBitsInWord	FuzzerValueBitMap.h	/^  static const size_t kBitsInWord = (sizeof(uintptr_t) * 8);$/;"	m	struct:fuzzer::ValueBitMap
+kCmpDictionaryEntriesDequeSize	FuzzerMutate.h	/^  static const size_t kCmpDictionaryEntriesDequeSize = 16;$/;"	m	class:fuzzer::MutationDispatcher
+kExtraStatsFormatString	afl/afl_driver.cpp	/^static const char *kExtraStatsFormatString = "peak_rss_mb            : %u\\n"$/;"	v	file:
+kFeatureSetSize	FuzzerCorpus.h	/^  static const size_t kFeatureSetSize = 1 << 21;$/;"	m	class:fuzzer::InputCorpus
+kMapPrimeMod	FuzzerValueBitMap.h	/^  static const size_t kMapPrimeMod = 65371;  \/\/ Largest Prime < kMapSizeInBits;$/;"	m	struct:fuzzer::ValueBitMap
+kMapSizeInBits	FuzzerValueBitMap.h	/^  static const size_t kMapSizeInBits = 1 << 16;$/;"	m	struct:fuzzer::ValueBitMap
+kMapSizeInWords	FuzzerValueBitMap.h	/^  static const size_t kMapSizeInWords = kMapSizeInBits \/ kBitsInWord;$/;"	m	struct:fuzzer::ValueBitMap
+kMaxAflInputSize	afl/afl_driver.cpp	/^static const size_t kMaxAflInputSize = 1 << 20;$/;"	v	file:
+kMaxDictSize	FuzzerDictionary.h	/^  static const size_t kMaxDictSize = 1 << 14;$/;"	m	class:fuzzer::Dictionary
+kMaxDictSize	FuzzerMutate.cpp	/^const size_t Dictionary::kMaxDictSize;$/;"	m	class:fuzzer::Dictionary	file:
+kMaxSize	FuzzerDictionary.h	/^  static const size_t kMaxSize = kMaxSizeT;$/;"	m	class:fuzzer::FixedWord
+kMaxUnitSizeToPrint	FuzzerLoop.cpp	/^static const size_t kMaxUnitSizeToPrint = 256;$/;"	m	namespace:fuzzer	file:
+kNumExtraStats	afl/afl_driver.cpp	/^static const int kNumExtraStats = 2;$/;"	v	file:
+kNumFlags	FuzzerDriver.cpp	/^static const size_t kNumFlags =$/;"	m	namespace:fuzzer	file:
+kNumPCs	FuzzerTracePC.h	/^  static const size_t kNumPCs = 1 << 21;$/;"	m	class:fuzzer::TracePC
+kSHA1NumBytes	FuzzerSHA1.h	/^static const int kSHA1NumBytes = 20;$/;"	m	namespace:fuzzer
+kShmemSize	FuzzerShmem.h	/^  static const size_t kShmemSize = 1 << 22;$/;"	m	class:fuzzer::SharedMemoryRegion
+kSize	FuzzerTracePC.h	/^  static const size_t kSize = kSizeT;$/;"	m	struct:fuzzer::MemMemTable
+kSize	FuzzerTracePC.h	/^  static const size_t kSize = kSizeT;$/;"	m	struct:fuzzer::TableOfRecentCompares
+kTracePcBits	FuzzerTracePC.h	/^  static const size_t kTracePcBits = 18;$/;"	m	class:fuzzer::TracePC
+keyBuffer	FuzzerSHA1.cpp	/^	uint8_t keyBuffer[BLOCK_LENGTH];$/;"	m	struct:__anon2::sha1nfo	file:
+main	FuzzerMain.cpp	/^int main(int argc, char **argv) {$/;"	f
+main	afl/afl_driver.cpp	/^int main(int argc, char **argv) {$/;"	f
+main	standalone/StandaloneFuzzTargetMain.c	/^int main(int argc, char **argv) {$/;"	f
+maybe_duplicate_stderr	afl/afl_driver.cpp	/^static void maybe_duplicate_stderr() {$/;"	f	file:
+maybe_initialize_extra_stats	afl/afl_driver.cpp	/^static void maybe_initialize_extra_stats() {$/;"	f	file:
+memmem	test/StrstrTest.cpp	14;"	d	file:
+nil	test/DSOTestMain.cpp	/^static volatile int *nil = 0;$/;"	v	file:
+operator ()	FuzzerRandom.h	/^  intptr_t operator()(intptr_t From, intptr_t To) {$/;"	f	class:fuzzer::Random
+operator ()	FuzzerRandom.h	/^  result_type operator()() { return this->std::mt19937::operator()(); }$/;"	f	class:fuzzer::Random
+operator ()	FuzzerRandom.h	/^  size_t operator()(size_t n) { return n ? Rand() % n : 0; }$/;"	f	class:fuzzer::Random
+operator ()	FuzzerTracePC.h	/^  size_t operator()(const std::vector<int>& v) const {$/;"	f	struct:fuzzer::VectorIntHash
+operator <	FuzzerDictionary.h	/^  bool operator<(const FixedWord<kMaxSize> &w) const {$/;"	f	class:fuzzer::FixedWord
+operator ==	FuzzerDictionary.h	/^  bool operator==(const FixedWord<kMaxSize> &w) const {$/;"	f	class:fuzzer::FixedWord
+operator []	FuzzerCorpus.h	/^  const Unit &operator[] (size_t Idx) const { return Inputs[Idx]->U; }$/;"	f	class:fuzzer::InputCorpus
+operator []	FuzzerDictionary.h	/^  DictionaryEntry & operator[] (size_t Idx) {$/;"	f	class:fuzzer::Dictionary
+previous_peak_rss	afl/afl_driver.cpp	/^static uint32_t previous_peak_rss = 0;$/;"	v	file:
+push_back	FuzzerDictionary.h	/^  void push_back(DictionaryEntry DE) {$/;"	f	class:fuzzer::Dictionary
+secondsSinceProcessStartUp	FuzzerInternal.h	/^  size_t secondsSinceProcessStartUp() {$/;"	f	class:fuzzer::Fuzzer
+sha1_addUncounted	FuzzerSHA1.cpp	/^void sha1_addUncounted(sha1nfo *s, uint8_t data) {$/;"	f	namespace:__anon2
+sha1_hashBlock	FuzzerSHA1.cpp	/^void sha1_hashBlock(sha1nfo *s) {$/;"	f	namespace:__anon2
+sha1_init	FuzzerSHA1.cpp	/^void sha1_init(sha1nfo *s) {$/;"	f	namespace:__anon2
+sha1_pad	FuzzerSHA1.cpp	/^void sha1_pad(sha1nfo *s) {$/;"	f	namespace:__anon2
+sha1_result	FuzzerSHA1.cpp	/^uint8_t* sha1_result(sha1nfo *s) {$/;"	f	namespace:__anon2
+sha1_rol32	FuzzerSHA1.cpp	/^uint32_t sha1_rol32(uint32_t number, uint8_t bits) {$/;"	f	namespace:__anon2
+sha1_write	FuzzerSHA1.cpp	/^void sha1_write(sha1nfo *s, const char *data, size_t len) {$/;"	f	namespace:__anon2
+sha1_writebyte	FuzzerSHA1.cpp	/^void sha1_writebyte(sha1nfo *s, uint8_t data) {$/;"	f	namespace:__anon2
+sha1nfo	FuzzerSHA1.cpp	/^typedef struct sha1nfo {$/;"	s	namespace:__anon2	file:
+sha1nfo	FuzzerSHA1.cpp	/^} sha1nfo;$/;"	t	namespace:__anon2	typeref:struct:__anon2::sha1nfo	file:
+simple_hash	test/SimpleHashTest.cpp	/^static uint32_t simple_hash(const uint8_t *Data, size_t Size) {$/;"	f	file:
+sink	test/CustomCrossOverAndMutateTest.cpp	/^static volatile int sink;$/;"	v	file:
+sink	test/CustomCrossOverTest.cpp	/^static volatile int sink;$/;"	v	file:
+sink	test/LargeTest.cpp	/^volatile int sink;$/;"	v
+sink	test/StrncmpTest.cpp	/^static volatile int sink;$/;"	v	file:
+size	FuzzerCorpus.h	/^  size_t size() const { return Inputs.size(); }$/;"	f	class:fuzzer::InputCorpus
+size	FuzzerDictionary.h	/^  size_t size() const { return Size; }$/;"	f	class:fuzzer::Dictionary
+size	FuzzerDictionary.h	/^  uint8_t size() const { return Size; }$/;"	f	class:fuzzer::FixedWord
+size	FuzzerExtFunctions.h	/^  int size;$/;"	m	struct:UserCallbacks
+slowest_unit_time_secs	afl/afl_driver.cpp	/^static time_t slowest_unit_time_secs = 0;$/;"	v	file:
+state	FuzzerSHA1.cpp	/^	uint32_t state[HASH_LENGTH\/4];$/;"	m	struct:__anon2::sha1nfo	file:
+strcasestr	test/StrstrTest.cpp	13;"	d	file:
+suppress_warning1	afl/afl_driver.cpp	/^static volatile char suppress_warning1 = AFL_DEFER_FORKSVR[0];$/;"	v	file:
+suppress_warning2	afl/afl_driver.cpp	/^static volatile char suppress_warning2 = AFL_PERSISTENT[0];$/;"	v	file:
+t	test/CallerCalleeTest.cpp	/^static F t[256];$/;"	v	file:
+t0	test/CallerCalleeTest.cpp	/^static F t0[256] = {$/;"	v	file:
+write_extra_stats	afl/afl_driver.cpp	/^static void write_extra_stats() {$/;"	f	file:
+~Fuzzer	FuzzerLoop.cpp	/^Fuzzer::~Fuzzer() { }$/;"	f	class:fuzzer::Fuzzer
+~InputCorpus	FuzzerCorpus.h	/^  ~InputCorpus() {$/;"	f	class:fuzzer::InputCorpus
+~MutationDispatcher	FuzzerMutate.h	/^  ~MutationDispatcher() {}$/;"	f	class:fuzzer::MutationDispatcher
+~ScopedDoingMyOwnMemOrStr	FuzzerDefs.h	/^  ~ScopedDoingMyOwnMemOrStr() { DoingMyOwnMemOrStr--; }$/;"	f	struct:fuzzer::ScopedDoingMyOwnMemOrStr
+~TimerQ	FuzzerUtilWindows.cpp	/^  ~TimerQ() {$/;"	f	class:fuzzer::TimerQ
