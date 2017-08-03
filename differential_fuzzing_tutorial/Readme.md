@@ -4,7 +4,7 @@
 To setup libFuzzer, follow the instructions at the main [tutorial](https://github.com/google/fuzzer-test-suite/tree/master/tutorial)
 
 ## Example differential fuzzing invocation
-Inside `nezhaplus/test-suite/`, run:
+From the root of the repo run:
 ```shell
 clang++ -g -fsanitize=address -fsanitize-coverage=trace-pc-guard differential_fuzzing_tutorial/diff_fuzz_me.cc Fuzzer/libFuzzer.a
 mkdir -p out && ./a.out -diff_mode=1 -artifact_prefix=out/
