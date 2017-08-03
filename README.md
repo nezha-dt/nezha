@@ -17,7 +17,7 @@ examples should access [v-0.1](https://github.com/nezha-dt/nezha/tree/v0.1).
 
 This repo follows the format of libFuzzer's [fuzzer-test-suite](https://github.com/google/fuzzer-test-suite).
 For a simple example on how to perform differential testing using the NEZHA
-port of libFuzzer see [differential_fuzzing_tutorial](differeential_fuzzing_tutorial).
+port of libFuzzer see [differential_fuzzing_tutorial](https://github.com/nezha-dt/nezha/tree/master/differential_fuzzing_tutorial).
 
 # Support
 We welcome issues and pull requests with new fuzzing targets.
