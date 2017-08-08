@@ -11,6 +11,12 @@ FUZZ_CXXFLAGS="-O2 -fno-omit-frame-pointer -g -fsanitize=address -fsanitize-cove
 CORPUS=CORPUS-$EXECUTABLE_NAME_BASE
 JOBS=8
 
+export CC=${CC:-"clang"}
+export CXX=${CXX:-"clang++"}
+export CFLAGS=${CFLAGS:-"$FUZZ_CXXFLAGS"}
+export CXXFLAGS=${CXXFLAGS:-"$FUZZ_CXXFLAGS"}
+export LIB_FUZZING_ENGINE=Fuzzer/libFuzzer.a
+
 get_git_revision() {
   GIT_REPO="$1"
   GIT_REVISION="$2"
