@@ -1,0 +1,91 @@
+#!/usr/bin/python
+
+from sys import argv
+from subprocess import Popen, PIPE
+from shutil import rmtree
+from os import mkdir, sep
+from time import time
+
+def get_line_count(parts):
+	if len(parts) == 0:
+		return None
+	label = parts[0]
+	label_parts = label.split("\t")
+	if len(label_parts) != 2:
+		return None
+	number = label_parts[0]
+	if len(number) <= 1:
+		return None
+	if number[0] != '#':
+		return None
+	just_value = number[1 : ]
+	if just_value.isdigit():
+		return int(just_value)
+
+def run_single_test(full_commands, output_dir):
+	mkdir(output_dir)
+	start = time()
+	test_process = Popen(full_commands, stdout = PIPE, stderr = PIPE)
+	out, err = test_process.communicate()
+	end = time()
+	rmtree(output_dir)
+
+	out_lines = err.split("\n")
+	out_lines.reverse()
+	for line in out_lines:
+		line = line.rstrip()
+		parts = line.split(" ")
+		n_execs = get_line_count(parts)
+		if n_execs is not None:
+			cov_header_i = parts.index("cov:")
+			cov_i = cov_header_i + 1
+			cov_str = parts[cov_i]
+			cov = int(cov_str)
+			break
+
+	return end - start, cov, n_execs
+
+def run_tests(commands, output_dir, n_runs):
+	full_commands = commands + ["-artifact_prefix=" + output_dir + sep]
+	coords = []
+	times = []
+	covs = []
+	exec_counts = []
+	for run_i in range(n_runs):
+		time, cov, n_execs = run_single_test(full_commands, output_dir)
+		coords.append((time, n_execs, cov))
+		times.append(time)
+		covs.append(cov)
+		exec_counts.append(n_execs)
+		print "Trial %d: time: %f s, " % (run_i, time) + \
+			"executions: %d: coverage: %d" % (n_execs, cov)
+	avg_time, avg_covs, avg_n_execs = map(lambda collection:
+						sum(collection) / float(n_runs),
+						(times, covs, exec_counts))
+	print "Average time: %f\n" % (avg_time) + \
+		"Average number of executions: %f\n" % (avg_n_execs) + \
+		"Average coverage: %f" % (avg_covs)
+
+DEFAULT_N_RUNS = 50
+
+if __name__ == "__main__":
+	OUTPUT_DIR_ID = 1
+	N_RUNS_OR_COMMAND_ID = OUTPUT_DIR_ID + 1
+
+	if len(argv) <= N_RUNS_OR_COMMAND_ID:
+		print "Usage: %s [output directory] " % (argv[0]) + \
+			"(optional number of runs, " + \
+				"default %d) " %(DEFAULT_N_RUNS) + \
+			"[test command and arguments without -artifact_prefix]"
+		exit(-1)
+	output_dir = argv[OUTPUT_DIR_ID]
+	command_or_n_runs = argv[N_RUNS_OR_COMMAND_ID]
+	if command_or_n_runs.isdigit():
+		n_runs = int(command_or_n_runs)
+		commands_start = N_RUNS_OR_COMMAND_ID + 1
+	else:
+		n_runs = DEFAULT_N_RUNS
+		commands_start = N_RUNS_OR_COMMAND_ID
+
+	commands = argv[commands_start : ]
+	run_tests(commands, output_dir, n_runs)
